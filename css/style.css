@@ -28,21 +28,19 @@ h2, #currentdate {
 	color: #ff3b3f;
 }
 
-h1, h2, main, footer{
-    font-family: Arial, Helvetica, sans-serif;
+h1{
+	font-family: 'Allison', cursive;
+	font-size: 40px;
+}
+
+h2, main, footer{
+    font-family: 'Lato', sans-serif;
 }
 
 main {
 	margin: 40px 10px;
 	padding: 10px;
-	max-width: auto;
-}
-
-h3 {
-	font-size: 24px;
-	margin: 0 0 15px 0;
-	border-bottom: 1px solid #333;
-	padding: 0;
+	max-width: 100%;
 }
 
 p {
