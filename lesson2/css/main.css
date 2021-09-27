@@ -14,7 +14,7 @@ body {
     width: 90%;
     margin: auto;
     background-color: #efefef;
-	color: #444444;
+	color: #43464b;
 }
 
 h1{
@@ -32,17 +32,23 @@ h2{
 
 footer{
 	font-family: 'Lato', sans-serif;
+	font-weight: bold;
 }
 h3{
 	padding-top: 1rem;
 }
 
-h4, #currentdate {
+h4 {
 	color: #ff3b3f;
+}
+
+ #currentdate {
+	color: #bf2c2f;
 }
 
 p {
 	padding-bottom: 1rem;
+	font-weight: bold;
 }
 
 h3, h4, p {
