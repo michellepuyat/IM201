@@ -45,6 +45,7 @@ h1, h2, h3 {
 h1 {
 	font-size: 50px;
 	margin-bottom: 0;
+	text-align: center;
 }
 
 h2 {
@@ -82,7 +83,7 @@ nav ul li a {
   	transition: 0.5s;
 }
 
-footer a:visited {
+footer a, footer a:visited {
 	color: #fff;
 }
 
@@ -92,7 +93,7 @@ footer a:visited {
 }
 
 nav a:hover {
-	--d: 75%;
+	--d: 100%;
 }
 
 main {
