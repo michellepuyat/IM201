@@ -1,9 +1,15 @@
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 64rem) {
 
-    header img {
-        width: 25%;
-        height: auto;
+    h1 {
+        font-size: 50px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    h2 {
+        
+        font-size: 24px;
     }
 
     nav {
