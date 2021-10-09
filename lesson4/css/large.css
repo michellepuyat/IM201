@@ -1,6 +1,11 @@
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 64rem) {
 
+    header img {
+        width: 25%;
+        height: auto;
+    }
+
     nav {
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffce00+0,ffe068+100 */
         background: #ffce00; /* Old browsers */

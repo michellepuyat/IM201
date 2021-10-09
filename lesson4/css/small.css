@@ -7,13 +7,15 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 header {
 	background-color: #0375B4;
 	color: #fff;
-	text-align: center;
-	justify-content: center;
 	padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header img {
-	width: 50%;
+	width: 25%;
+    height: auto;
 }
 
 footer {
