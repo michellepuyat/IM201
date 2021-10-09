@@ -4,17 +4,70 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+header {
+	background-color: #0375B4;
+	color: #fff;
+	display: grid;
+    grid-template-areas: ;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+header img {
+	width: 25%;
+}
+
+footer {
+	background-color: #0375B4;
+	color: #fff;
+	justify-content: center;
+	padding: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	text-align: center;
+}
+
+header,
+nav,
+main,
+footer {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+h1, h2, h3 {
+	font-family: 'ABeeZee', sans-serif;
+}
+
+h1 {
+	font-size: 50px;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+h2 {
+	
+	font-size: 24px;
+}
+
+div {
+	font-size: 17px;
+	font-family: 'Lora', serif;
+}
+
 nav button {
     margin: .2rem 2%;
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
-    color: #fff;
+    color: #262228;
 }
 
 nav {
-    background-color: #aa0000;
+    background-color: #FFCE00;
     font-family: Verdana, sans-serif;
+    text-align: center;
 }
 
 nav ul {
@@ -27,17 +80,28 @@ nav ul li a {
     display: block;
     padding: .8rem 2%;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(38,34,40, 0.8);
     border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 
-nav ul li.active a{background-color: rgba(0, 0, 0, 0.2); color:#fff;}
+nav ul li.active a{background-color: rgba(0, 0, 0, 0.2); color:#262228;}
 
 nav ul li a:hover {background-color: rgba(0, 0, 0, 0.4);}
 
 nav ul.hide {
     display: none;
+}
+
+.pagetitle {
+    text-align: center;
+}
+
+main div {
+    margin: 1rem;
+	border: 1px solid #bbb;
+	padding: 1rem;
+	background-color: #E0DDE3;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
