@@ -25,3 +25,16 @@ addbtn.addEventListener('keyup', (event) => {
    }
 });
 
+//create delete button
+const listUl = document.querySelector('.list');
+const lis = listUl.children;
+
+function deletebtn(li) {
+    const remove = document.createElement('button');
+    remove.className = 'btn-icon up';
+    li.appendChild(remove);
+}
+
+for (var i = 0; i < lis.length; i++) {
+    deletebtn(lis[i]);
+}
