@@ -1,8 +1,27 @@
-const input = document.querySelector('input');
-const list = document.querySelector('ul');
-const input = document.querySelector('button');
-const main = document.querySelector('main');
+const listcontainer = document.querySelector('.listcontainer');
+const favchap = document.querySelector('#favchap');
+const addbtn = document.querySelector('#addbtn');
 
-button.addEventListener('click', function() {
+function addLists() {
+    if (favchap.value == ''){
+        alert('Enter a valid Book of Mormon Chapter')
+    } else {
+        const ul = listcontainer.querySelector('ul');
+        const li = document.createElement('li');
 
+        li.innerHTML = favchap.value;
+        favchap.value = '';
+        ul.appendChild(li);
+    }
 }
+
+addbtn.addEventListener('click', () => {
+    addLists();
+  });
+
+addbtn.addEventListener('keyup', (event) => {
+   if(event.which === 13) {
+     addLists();
+   }
+});
+
