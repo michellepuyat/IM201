@@ -12,6 +12,8 @@ function addLists() {
         li.innerHTML = favchap.value;
         favchap.value = '';
         ul.appendChild(li);
+
+        deletebtn(li);
     }
 }
 
@@ -31,8 +33,10 @@ const lis = listUl.children;
 
 function deletebtn(li) {
     const remove = document.createElement('button');
-    remove.className = 'btn-icon up';
+    remove.textContent = '❌';
     li.appendChild(remove);
+
+    return li;
 }
 
 for (var i = 0; i < lis.length; i++) {
