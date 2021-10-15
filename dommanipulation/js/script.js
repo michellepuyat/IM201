@@ -34,6 +34,7 @@ const lis = listUl.children;
 function deletebtn(li) {
     const remove = document.createElement('button');
     remove.textContent = '❌';
+    remove.className = 'remove';
     li.appendChild(remove);
 
     return li;
@@ -42,3 +43,14 @@ function deletebtn(li) {
 for (var i = 0; i < lis.length; i++) {
     deletebtn(lis[i]);
 }
+
+listcontainer.addEventListener('click', (event) => {
+    if (event.target.tagName === 'BUTTON') {
+      const button = event.target;
+      const li = button.parentNode;
+      const ul = li.parentNode;
+      if (button.className === 'remove') {
+        ul.removeChild(li);
+      } 
+    }
+  });
