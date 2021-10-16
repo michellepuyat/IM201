@@ -84,7 +84,6 @@ nav ul li a {
     border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-
 nav ul li.active a{background-color: rgba(0, 0, 0, 0.2); color:#262228;}
 
 nav ul li a:hover {background-color: rgba(0, 0, 0, 0.4);}
@@ -110,6 +109,65 @@ main div {
     display: table;
     clear: both;
   }
+
+/* Banner */
+
+/* 5 Day Forecast */
+.banner {margin: 10px auto; position: relative;}
+
+.contentbox img {
+    width: 100%
+}
+
+.forecast {
+	display: flex;
+	flex-flow: row wrap;
+    border: none;
+}
+
+.forecast-col {
+	flex: 1 1 auto;
+	background-color: #fff;
+    border-bottom: 1px solid #bbb;
+	border-left: 1px solid #bbb;
+	text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.forecast-col:hover {
+	opacity: 0.75;
+	background-color: black;
+	color: white;
+}
+
+.col-head {
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid #bbb;
+	text-align: center;
+    font-weight: 700;
+	font-size: 1.2rem;
+	background-color: #FFCE00;
+	color: #0375B4;
+}
+
+.forecast img {
+	border-radius: 100px;
+	padding: 0.25rem;
+    width: 80%;
+}
+
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	font-size: .9rem;
+	text-align: center;
+}
+
+.col-head, .data {
+    font-family: 'ABeeZee', sans-serif;
+}
 
 
 
