@@ -196,12 +196,8 @@ main div {
     font-family: 'ABeeZee', sans-serif;
 }
 
-
-
-
-
-
-
-
-
-
+/*Article*/
+.article img {
+    width: 100%;
+    height: max-content;
+}
