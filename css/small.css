@@ -64,4 +64,5 @@ input{
 header img {
     width: 200px;
     height: auto;
+	display: none;
 }

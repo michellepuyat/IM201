@@ -3,12 +3,10 @@ const favchap = document.querySelector('#favchap');
 const addbtn = document.querySelector('#addbtn');
 
 function addLists() {
-    const bombooks = ['1 Nephi','2 Nephi','Jacob', 'Enos', 'Jarom','Omni','Mormon','Mosiah', 'Alma', 'Helaman', '3 Nephi', '4 Nephi', 'Mormon', 'Ether', 'Moroni'];
+    const bombooks = ['Nephi','Jacob', 'Enos', 'Jarom','Omni','Mormon','Mosiah', 'Alma', 'Helaman', 'Mormon', 'Ether', 'Moroni'];
 
     if (favchap.value == ''){
         alert('Enter a valid Book of Mormon Chapter')
-    } else if (bombooks.includes(favchap.value) = false) {
-        alert( favchap.value & 'is not a valid Book of Mormon Chapter')
     } else {
         const ul = listcontainer.querySelector('ul');
         const li = document.createElement('li');
