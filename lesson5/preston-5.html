@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,12 +46,14 @@
         <div class="contentbox banner">
             <img src="/lesson5/images/preston-banner.jpg" alt="Preston image">
             <div class="current_weather">
-                <div class="weather_content">
-                    <h2><span>Current Weather</span></h2>
-                    <p>Temp: <span id="current-temp"></span><span>&deg; F</span></p>
-                    <p>High: <span id="temp-max"></span><span>&deg; F</span></p>
-                    <p>Low: <span id="temp-min"></span><span>&deg; F</span></p>
-                    <p>Conditions: <span id="condition"></span></p>
+                <h2><span>Weather Summary</span></h2>
+                <div class="stats">
+                    <span class="label">Currently: </span><span id="weather-today">Partly Cloudy</span>
+                    <span class="label">Temp: </span><span id="current-temp">76&deg; F</span>
+                    <span class="label">High: </span><span id="temp-max">85&deg; F</span>
+                    <span class="label">Wind Chill: </span><span id="wind-chill">70&deg; F</span>
+                    <span class="label">Humidity: </span><span id="humidity">69%</span>
+                    <span class="label">Wind Speed: </span><span id="wind-speed">5mph</span>
                 </div>
           </div>
         </div>
@@ -85,7 +88,11 @@
                 </div>
             </div>
         </div>
-        <div class="contentbox">Article</div>
+
+        <div class="contentbox Article">
+
+        </div>
+
         <div class="contentbox">Contact Information</div>
     </main>
     

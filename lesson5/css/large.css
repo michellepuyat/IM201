@@ -1,5 +1,5 @@
 /* 64em is also 1028px when basefont is 16px */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 64em) {
 
     h1 {
         font-size: 50px;
@@ -43,5 +43,13 @@
         border-right: 1px solid rgba(0, 0, 0, 0.3);
         padding: .6rem 1rem;
     }
+    .banner { 
+		position: relative;
+	}
 
+	.current_weather {
+		position: absolute;
+		top: 25px;
+		left: 25px;
+	}
 } /*end large */

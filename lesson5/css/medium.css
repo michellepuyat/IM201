@@ -9,4 +9,14 @@
 		
 		font-size: 20px;
 	}
+
+	.banner { 
+		position: relative;
+	}
+
+	.current_weather {
+		position: absolute;
+		top: 25px;
+		left: 25px;
+	}
 }

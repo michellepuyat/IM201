@@ -98,9 +98,8 @@ nav ul.hide {
 
 main div {
     margin: 1rem;
-	border: 1px solid #bbb;
 	padding: 1rem;
-	background-color: #E0DDE3;
+	
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -111,14 +110,42 @@ main div {
   }
 
 /* Banner */
-
-/* 5 Day Forecast */
-.banner {margin: 10px auto; position: relative;}
-
-.contentbox img {
-    width: 100%
+.banner { 
+    margin: 0;
+    padding: 0;
 }
 
+.banner img {
+    width: 100%;
+    height: max-content;
+}
+
+.current_weather {
+	background: radial-gradient(#eee, #0375B4);
+	border: 1px solid #262228;
+	padding: 1.5rem;
+	box-shadow: 0 0 30px #333;
+	opacity: .9;
+}
+
+.current_weather h2{
+    margin: 0;
+	border-bottom: 2px solid;
+}
+
+.stats {
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 0;
+}
+
+.label {
+	text-align: right;
+	font-weight: 700;
+	margin-right: .5rem;
+}
+
+/* 5 Day Forecast */
 .forecast {
 	display: flex;
 	flex-flow: row wrap;
@@ -137,7 +164,7 @@ main div {
 
 .forecast-col:hover {
 	opacity: 0.75;
-	background-color: black;
+	background-color: #262228;
 	color: white;
 }
 
