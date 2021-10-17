@@ -10,6 +10,18 @@ const options = {
 };
 document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);
 
+//hide and show banner
+const dayName = new Date().toLocaleString('en-us', {weekday:'long'})
+console.log(dayName);
+
+if (dayName == "Friday") {
+    document.getElementById("banner").style.display = 'block';
+} else {
+    document.getElementById("banner").style.display= 'none';
+}
+
+
+//toggle Menu
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
 }

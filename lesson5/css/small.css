@@ -24,16 +24,27 @@ footer {
 	justify-content: center;
 	padding: 10px;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 15px;
+	font-size: 18px;
 	text-align: center;
 }
 
 header,
 nav,
 main,
-footer {
-	max-width: 900px;
+footer, #banner {
+	max-width: 1024px;
 	margin: 0 auto;
+}
+
+#banner {
+	background: radial-gradient(rgb(241, 248, 178), #FFCE00);
+	color: #262228;
+	justify-content: center;
+	padding: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
 }
 
 h1, h2, h3 {
@@ -49,6 +60,12 @@ h1 {
 h2 {
 	
 	font-size: 18px;
+}
+
+header h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	text-align: center;
 }
 
 div {
@@ -67,6 +84,7 @@ nav button {
 nav {
     background-color: #FFCE00;
     font-family: Verdana, sans-serif;
+	font-size: 1.2rem;
     text-align: center;
 }
 
@@ -109,13 +127,13 @@ main div {
     clear: both;
   }
 
-/* Banner */
-.banner { 
+/* hero */
+.hero { 
     margin: 0;
     padding: 0;
 }
 
-.banner img {
+.hero img {
     width: 100%;
     height: max-content;
 }
@@ -155,8 +173,7 @@ main div {
 .forecast-col {
 	flex: 1 1 auto;
 	background-color: #fff;
-    border-bottom: 1px solid #bbb;
-	border-left: 1px solid #bbb;
+    border: 1px solid #bbb;
 	text-align: center;
     margin: 0;
     padding: 0;
@@ -200,4 +217,43 @@ main div {
 .article img {
     width: 100%;
     height: max-content;
+	box-shadow: 0 0 .5rem #333;
+}
+
+.article p {
+	text-align: justify;
+}
+
+.article {
+    margin: 1rem;
+	border: 1px solid #bbb;
+	padding: 1rem;
+	background-color: #E0DDE3;
+}
+
+.article h5 {
+	margin-top: 0;
+}
+.article h2 {
+	margin-bottom: 0;
+}
+
+/*Contact Info*/
+.contact {
+	margin: 0;
+	background-color: hsl(201, 97%, 77%);
+	color: #262228;
+	justify-content: center;
+	padding: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	text-align: center;
+}
+.contact p {
+	font-size: 18px;
+	margin:0;
+}
+
+.contact img {
+	width: 10%;
 }
