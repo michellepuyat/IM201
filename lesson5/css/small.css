@@ -231,8 +231,9 @@ main div {
 	background-color: #E0DDE3;
 }
 
-.article h5 {
+.article .author {
 	margin-top: 0;
+	font-weight: bold;
 }
 .article h2 {
 	margin-bottom: 0;
