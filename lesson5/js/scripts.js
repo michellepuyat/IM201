@@ -14,7 +14,7 @@ document.getElementById('currentdate').textContent = new Date().toLocaleDateStri
 const dayName = new Date().toLocaleString('en-us', {weekday:'long'})
 console.log(dayName);
 
-if (dayName == "Friday") {
+if (dayName == "Monday") {
     document.getElementById("banner").style.display = 'block';
 } else {
     document.getElementById("banner").style.display= 'none';
