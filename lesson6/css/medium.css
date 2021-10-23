@@ -29,12 +29,9 @@
 		left: 25px;
 	}
 
-	/*Article*/
-	.article img { 
-		width: 60%;
-		float: right;
-		margin-left: 1rem;
-		margin-bottom: 1rem;
+	.article figure.articlephoto {
+		width: 50%;
+    	margin: 0 0 0 2%;
+    	float: right;
 	}
-
 }

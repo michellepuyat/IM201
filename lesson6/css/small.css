@@ -147,6 +147,10 @@ main div {
     padding: 0;
 }
 
+.hero .herophoto {
+	margin: 0 0 0 0;
+}
+
 .hero img {
     width: 100%;
     height: max-content;
@@ -228,10 +232,20 @@ main div {
 }
 
 /*Article*/
-.article img {
+.article figure.articlephoto {
     width: 100%;
     height: max-content;
 	box-shadow: 0 0 .5rem #333;
+	margin: 0;
+}
+
+.article figure.articlephoto img {
+    width: 100%;
+}
+
+.article figure.articlephoto figcaption {
+    text-align: center;
+    font-size: .75rem;
 }
 
 .article p {
