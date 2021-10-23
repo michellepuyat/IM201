@@ -8,16 +8,29 @@ header {
 	background-color: #0375B4;
 	color: #fff;
 	padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-	position: sticky;
-	top: 0px;
+    display: grid;
+	grid-template-columns: 1fr 2fr;
+	position: relative;
 }
 
-header img {
+header .logo {
+	/*
 	width: 25%;
     height: auto;
+	*/
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+header .headings {
+	grid-column: 2;
+	margin: 0 0 0 4%;
 }
 
 footer {
@@ -55,8 +68,7 @@ h1, h2, h3 {
 
 h1 {
 	font-size: 35px;
-	margin-bottom: 0;
-	text-align: center;
+	margin-bottom: 0 0 0 0; 
 }
 
 h2 {
@@ -67,7 +79,6 @@ h2 {
 header h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
-	text-align: center;
 }
 
 div {

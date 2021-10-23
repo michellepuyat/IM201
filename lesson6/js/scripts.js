@@ -13,7 +13,7 @@ document.getElementById('currentdate').textContent = new Date().toLocaleDateStri
 //hide and show banner
 const dayName = new Date().toLocaleString('en-us', {weekday:'long'})
 
-if (dayName == "Monday") {
+if (dayName == "Friday") {
     document.getElementById("banner").style.display = 'block';
 } else {
     document.getElementById("banner").style.display= 'none';
@@ -28,5 +28,4 @@ function toggleMenu() {
 //var element = document.getElementById("topbar");
 //var positioninfo = element.getBoundingClientRect();
 var ht = document.getElementById("topbar").clientHeight;
-console.log(ht);
 document.getElementById("navigation").style.top = ht;

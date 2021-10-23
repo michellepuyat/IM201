@@ -1,0 +1,40 @@
+@media only screen and (min-width: 37.5em){
+	h1 {
+		font-size: 40px;
+		margin-bottom: 0;
+		text-align: left;
+	}
+	
+	h2 {
+		
+		font-size: 20px;
+	}
+
+	header h2 {
+		font-size: 20px;
+	}
+
+	header .headings {
+		margin: 0 0 0 0;
+	}
+
+	/*hero*/
+	.hero { 
+		position: relative;
+	}
+
+	.current_weather {
+		position: absolute;
+		top: 25px;
+		left: 25px;
+	}
+
+	/*Article*/
+	.article img { 
+		width: 60%;
+		float: right;
+		margin-left: 1rem;
+		margin-bottom: 1rem;
+	}
+
+}
