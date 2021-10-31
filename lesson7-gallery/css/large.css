@@ -1,0 +1,71 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64em) {
+
+    h1 {
+        font-size: 50px;
+        margin-bottom: 0;
+    }
+    
+    h2 {
+        
+        font-size: 24px;
+    }
+
+    nav {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffce00+0,ffe068+100 */
+        background: #ffce00; /* Old browsers */
+        background: -moz-linear-gradient(top,  #ffce00 0%, #ffe068 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #ffce00 0%,#ffe068 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #ffce00 0%,#ffe068 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffce00', endColorstr='#ffe068',GradientType=0 ); /* IE6-9 */
+
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .6rem 1rem;
+    }
+    /*hero*/
+    .hero { 
+		position: relative;
+	}
+
+	.current_weather {
+		position: absolute;
+		top: 25px;
+		left: 25px;
+	}
+
+    /*Image Gallery */
+    .images-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .image-container {
+        box-shadow: 0 2px 8px -4px rgba(0, 0, 0, 0.5);
+        transition: all 300ms ease;
+    }
+
+    .image-container:hover {
+        box-shadow: 0 2px 12px -2px rgba(0, 0, 0, 0.7);
+        transform: translateY(-2px);
+    }
+} /*end large */
