@@ -46,4 +46,4 @@ function calculateTimePassed(dateToday, lastVisitDate) {
 
     //Reset counter
     localStorage.setItem('lastVisit', dateToday);
-    }
+}

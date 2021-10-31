@@ -291,10 +291,12 @@ main div {
 .images-section h2{
     text-align: center;
 }
+
 .image-container {
     margin: 0 auto;
     transition: box-shadow 300ms ease;
 }
+
 .image-container img {
     max-width: 100%;
     width: 100%;
@@ -305,6 +307,7 @@ main div {
     padding: 0 2rem 1rem 2rem;
     margin-top: .5rem;
 }
+
 .image-container:hover {
     box-shadow: 0 2px 8px -2px rgba(0,0,0,0.5);
 }
