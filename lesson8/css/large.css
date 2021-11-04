@@ -12,7 +12,7 @@
         font-size: 35px;
     }
 
-    tfoot {
+    tfoot td{
         font-size: 14px;
     }
 }

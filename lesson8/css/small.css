@@ -70,7 +70,7 @@ tbody tr:nth-child(even) {
 tbody .sales:before { content: '$';}
 tbody .sales-goal:before { content: '$';}
 
-tfoot {
+tfoot td{
 	background-color: var(--back);
-	font-size: 8px;
+	font-size: 10px;
 }
