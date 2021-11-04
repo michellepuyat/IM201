@@ -1,15 +1,15 @@
 @media only screen and (min-width: 64em) {
     tr:first-child th {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     thead tr:nth-child(even) {
-        font-size: 40px;
+        font-size: 35px;
     }
     
     td {
         text-align: center;
-        font-size: 35px;
+        font-size: 20px;
     }
 
     tfoot td{

@@ -18,7 +18,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 table {
 	margin: 10px auto;
-	width: 60%;
+	width: 80%;
 	max-width: 1000px;
 	border: thin solid var(--borderlight);
 	box-shadow: 5px 5px 10px var(--shadow);

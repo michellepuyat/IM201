@@ -1,14 +1,18 @@
 @media only screen and (min-width: 37.5em){
+    table {
+        width: 40%;
+    }
+    
     tr:first-child th {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     thead tr:nth-child(even) {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     td {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     tfoot td{
