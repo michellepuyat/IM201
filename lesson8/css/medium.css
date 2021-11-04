@@ -1,0 +1,13 @@
+@media only screen and (min-width: 37.5em){
+    tr:first-child th {
+        font-size: 40px;
+    }
+
+    thead tr:nth-child(even) {
+        font-size: 30px;
+    }
+
+    td {
+        font-size: 20px;
+    }
+}
