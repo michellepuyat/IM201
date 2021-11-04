@@ -1,6 +1,50 @@
+const input = document.querySelector('input');
+const add = document.querySelector('#addbtn');
+const list = document.querySelector('list');
+const count = document.querySelector('#count');
 const listcontainer = document.querySelector('.listcontainer');
 const favchap = document.querySelector('#favchap');
 const addbtn = document.querySelector('#addbtn');
+
+
+document.addEventListener('DOMContentLoaded',()=> {
+  getStoredList();
+})
+
+function getStoredList() {
+  try {
+    let chapters = localStorage.getItem('bomchaps');
+    if (chapters.length > 0) {
+      count.textContent = chapters.length; //counter
+      renderList(chapters); //display list
+    } else {
+      count.textContent = 0; //set counter to 0
+    }
+  }
+  catch (er) {
+    count.textContent = 0;
+  }
+}
+
+function renderList(chapters) {
+  list.innerHTML = '';
+  chapters.forEach(item => {
+    let li = document.createElement('li');
+    let deletebutton = document.createElement('button');
+    li.textContent = item.chapter; //puwede ito mali
+    deletebutton.textContent = '❌';
+    li.append(deletebutton);
+    list.append(li);
+    deletebutton.addEventListener('click', function() {
+      list.removeChild(li);
+      input.focus;
+    })
+    input.value = '';
+    input.focus();
+  })
+}
+
+let
 
 function addLists() {
     const bombooks = ['Nephi','Jacob', 'Enos', 'Jarom','Omni','Mormon','Mosiah', 'Alma', 'Helaman', 'Mormon', 'Ether', 'Moroni'];

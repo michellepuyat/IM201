@@ -297,6 +297,10 @@ main div {
     transition: box-shadow 300ms ease;
 }
 
+.image-container:hover {
+	box-shadow: 0 0 0 0;
+}
+
 .image-container img {
     max-width: 100%;
     width: 100%;

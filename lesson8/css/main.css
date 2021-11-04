@@ -1,0 +1,71 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+:root {
+	--back: #7fb9c2;
+	--back2: #628ca6;
+	--forelight: hsla(0,0%,100%,1);
+	--border: hsl(0,0%,20%);
+	--borderlight: hsl(0,0%,60%);
+	--shadow: hsl(0,0%,50%);
+	--zebra: hsl(0, 0%, 93%, 1);
+}
+
+table {
+	margin: 10px auto;
+	border: thin solid var(--borderlight);
+	box-shadow: 10px 0 30px -2px var(--shadow);
+	border-collapse: collapse;
+	font-family: Ubuntu, sans-serif;
+}
+tr:first-child th {
+	background-color: var(--back);
+	font-size: 25px;
+}
+
+thead tr:nth-child(even) {
+	background-color: var(--back2);
+	color: var(--forelight);
+}
+
+th, td {
+	padding: 7px 15px;
+	border: thin solid var(--borderlight);
+}
+
+th {
+	background-color: var(--back2);
+}
+
+td {
+	text-align: center;
+}
+
+tr .special{
+	font-style: italic;
+}
+
+tr .goal-exceeded{
+	background-color: var(--back2);
+	color: var(--forelight);
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #e7f0ed;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #e7ffed;
+}
+
+tbody .sales:before { content: '$';}
+tbody .sales-goal:before { content: '$';}
+
+tfoot {
+	background-color: var(--back);
+	font-size: 12px;
+}
