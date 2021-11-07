@@ -21,6 +21,6 @@ if (dayName == "Friday") {
 
 //stormseverity
 function adjustSeverity(rating) {
-    document.getElementById("severity").innerHTML = rating;
+    document.getElementById("severityvalue").innerHTML = rating;
 }
 

@@ -82,18 +82,18 @@
                 </datalist>
                 <div class="split"><span>Storm Severity</span>
                     <input type="range" 
-                           id="severity" 
-                           name="severity" 
+                           id="rating" 
+                           value="5"
                            min="1" 
                            max="10" 
                            step="1" 
-                           value="5" 
+                           list="tickmarks" 
                            oninput="adjustSeverity(this.value)" 
                            onchange="adjustSeverity(this.value)">
-                    <label id="severity">1</label>
+                    <label id="severityvalue">5</label>
                 </div>
                 <label class="top">Storm Region<span>*</span>
-                    <select name="region" required>
+                    <select name="region">
                         <option value="" disabled selected>Select Region... &#9662;</option>
                         <option value="preston">Preston</option>
                         <option value="soda springs">Soda Springs</option>
