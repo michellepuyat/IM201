@@ -19,3 +19,8 @@ if (dayName == "Friday") {
     document.getElementById("banner").style.display= 'none';
 }
 
+//stormseverity
+function adjustSeverity(rating) {
+    document.getElementById("severity").innerHTML = rating;
+}
+

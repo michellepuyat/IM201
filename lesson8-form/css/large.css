@@ -69,3 +69,8 @@
         transform: translateY(-2px);
     }
 } /*end large */
+
+/*Form*/
+form label.sbs {
+    padding: .4rem 0;
+}

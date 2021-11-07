@@ -326,6 +326,11 @@ picture img {
 }
 
 /*Form*/
+form {
+	max-width: 90%;
+	margin: auto;
+}
+
 form fieldset {
     margin: 2rem 0;
     border: 2px solid #0375B4;
@@ -344,12 +349,11 @@ form label.top, form div {
     display: block;
     padding: 1rem 0 0 0;
 	margin: 0;
-    color: #9c2c13;
-    font-size: .8rem;
+    color: #262228;
 	font-family: 'Montserrat', sans-serif;
 }
 
-form label.top input, form label.top select {
+form label.top input, form label.top select, form textarea {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
@@ -373,6 +377,7 @@ form div.split {
     justify-items: left;
 	margin: 0;
 	padding: 0.75rem 0 0;
+	max-width: 22rem;
 }
 form div.split span {
     grid-column: 1 / -1;
@@ -395,6 +400,35 @@ form label.sbs {
     display: block;
     padding-top: .75rem;
     color: #555;
-	font-size: .8rem;
+	font-size: 1rem;
 	font-family: 'Montserrat', sans-serif;
+}
+
+form input.submitBtn{
+    border: none;
+    background-color: #FFCE00;
+    color: #262228;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form .submitBtn:hover {background-color: rgba(0, 0, 0, 0.4);}
+
+form label span {
+    color: red;
+}
+
+form textarea {
+	height: 8rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
 }

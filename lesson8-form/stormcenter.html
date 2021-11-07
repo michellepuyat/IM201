@@ -12,6 +12,7 @@
     <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
+    <script defer src="js/scripts.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
@@ -51,16 +52,16 @@
             <fieldset>
                 <legend>Contact Information</legend>
                 <label class="top">Full Name<span>*</span>
-                    <input name="name" pattern="^[a-zA-Z ]{5,}[a-zA-Z]$" type="text" required>
+                    <input name="name" pattern="^[a-zA-Z ]{5,}[a-zA-Z]$" type="text" required title="Name should only contain letters alphanumeric characters">
                 </label>
                 <label class="top">Email
                     <input name="email" type="email" placeholder="someone@gmail.com">
                 </label>
                 <label class="top">Phone Number<span>*</span>
-                    <input name="phone" type="tel" minlength="7" required>
+                    <input name="phone" type="tel" required>
                 </label>
                 <label class="top">Zip Code<span>*</span>
-                    <input name="zip" type="number" min="10000" required>
+                    <input name="zip" type="number" required>
                 </label>
             </fieldset>
 
@@ -80,12 +81,20 @@
                     <option value="Tornado">
                 </datalist>
                 <div class="split"><span>Storm Severity</span>
-                    <input type="range" id="severity" name="severity" min="1" max="10" step="1" value="1" oninput="adjustLabel(this)">
-                    <label for="severity">1</label>
+                    <input type="range" 
+                           id="severity" 
+                           name="severity" 
+                           min="1" 
+                           max="10" 
+                           step="1" 
+                           value="5" 
+                           oninput="adjustSeverity(this.value)" 
+                           onchange="adjustSeverity(this.value)">
+                    <label id="severity">1</label>
                 </div>
-                <label class="top">Storm Region
-                    <select name="region">
-                        <option value="" disabled selected>Select Region...</option>
+                <label class="top">Storm Region<span>*</span>
+                    <select name="region" required>
+                        <option value="" disabled selected>Select Region... &#9662;</option>
                         <option value="preston">Preston</option>
                         <option value="soda springs">Soda Springs</option>
                         <option value="fish haven">Fish Haven</option>
@@ -100,7 +109,7 @@
                 <textarea name="additional-comments"></textarea>
                 </label>
             </fieldset>
-            <input type="submit" value="Report Storm">
+            <input class="submitBtn" type="submit" value="Report Storm">
         </form>
         
     </main>
@@ -110,9 +119,7 @@
         &copy;<span id="copyrightyear"></span> | Eye Sky Weather | All Rights Reserved | Michelle Angelie Puyat<br>
         <span id="currentdate"></span>
     </footer>
-    <script defer src="js/scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
-    <script src="js/windchill.js"></script>
 </body>
 </html>
