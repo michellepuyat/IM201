@@ -335,7 +335,7 @@ form fieldset {
     margin: 2rem 0;
     border: 2px solid #0375B4;
     border-radius: 10px;
-    padding: .5rem 2%; 
+    padding: .5rem 1rem 1rem 1rem; 
 }
 
 form legend {
@@ -405,7 +405,7 @@ form input.submitBtn{
     color: #262228;
     border-radius: .5rem;
     padding: .75rem 1.5rem;
-    margin: 0 0 2rem 2%;
+    margin: 0 0 2rem 1rem;
     width: 96%;
     max-width: 20rem;
 }
