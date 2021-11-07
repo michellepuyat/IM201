@@ -36,99 +36,71 @@
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
             <li><a href="#">Home</a></li>
-            <li><a href="./preston.html"></a>Preston</a></li>
+            <li><a href="./preston.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
-            <liclass="active"><a href="#">Storm Center</a></li>
+            <li class="active"><a href="#">Storm Center</a></li>
             <li><a href="./gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
     
 <!-- CONTENT HERE -->
     <main>
-        <h2 class="pagetitle">Preston Idaho</h2>
-        <div class="contentbox hero">
-            <figure class="herophoto">
-                <img src="./images/hero-image.jpeg" alt="hero image" sizes="100vw"
-                     srcset="images/hero-image200.jpg 200w,
-                             images/hero-image500.jpg 500w,
-                             images/hero-image800.jpg 800w,
-                             images/hero-image1100.jpg 1100w"
-                    >
-            </figure>
-            <div class="current_weather">
-                <h2><span>Weather Summary</span></h2>
-                <div class="stats">
-                    <span class="label">Currently: </span><span id="weather-today">Partly Cloudy</span>
-                    <span class="label">Temp: </span><span id="current-temp">50&deg; F</span>
-                    <span class="label">High: </span><span id="temp-max">85&deg; F</span>
-                    <span class="label">Wind Chill: </span><span id="wind-chill"></span>
-                    <span class="label">Humidity: </span><span id="humidity">69%</span>
-                    <span class="label">Wind Speed: </span><span id="wind-speed">4.8 mph</span>
+        <h2 class="pagetitle">Report a Storm</h2>
+        <form action="thanks.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="top">Full Name<span>*</span>
+                    <input name="name" pattern="^[a-zA-Z ]{5,}[a-zA-Z]$" type="text" required>
+                </label>
+                <label class="top">Email
+                    <input name="email" type="email" placeholder="someone@gmail.com">
+                </label>
+                <label class="top">Phone Number<span>*</span>
+                    <input name="phone" type="tel" minlength="7" required>
+                </label>
+                <label class="top">Zip Code<span>*</span>
+                    <input name="zip" type="number" min="10000" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Storm Date
+                    <input name="storm-date" type="date">
+                </label>
+                <label class="top">Storm Type
+                    <input list="weather-types" name="weather-types">
+                </label>
+                <datalist id="weather-types">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+                <div class="split"><span>Storm Severity</span>
+                    <input type="range" id="severity" name="severity" min="1" max="10" step="1" value="1" oninput="adjustLabel(this)">
+                    <label for="severity">1</label>
                 </div>
-          </div>
-        </div>
-
-        <div class="contentbox">
-            <h2>5 Day Forecast</h2>
-            <div class="forecast">
-                <div class="forecast-col">
-                    <span class="col-head">Wed</span>
-                    <img src="./images/weather-forecast/thunderstorms.png" alt="thunderstorm">
-                    <span class="data">89&deg;F</span>
+                <label class="top">Storm Region
+                    <select name="region">
+                        <option value="" disabled selected>Select Region...</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda springs">Soda Springs</option>
+                        <option value="fish haven">Fish Haven</option>
+                    </select>
+                </label>
+                <div>Are you in danger?
+                    <label class="container"><input type="radio" name="in-danger" value="yes"> Yes</label>
+                    <label class="container"><input type="radio" name="in-danger" value="maybe"> Maybe</label>
+                    <label class="container"><input type="radio" name="in-danger" value="no"> No</label>
                 </div>
-                <div class="forecast-col">
-                    <span class="col-head">Thur</span>
-                    <img src="./images/weather-forecast/thunderstorms.png" alt="thunderstorm">
-                    <span class="data">87&deg;F</span>
-                </div>
-                <div class="forecast-col">
-                    <span class="col-head">Fri</span>
-                    <img src="./images/weather-forecast/partly_cloudy.png" alt="partly cloudy">
-                    <span class="data">78&deg;F</span>
-                </div>
-                <div class="forecast-col">
-                    <span class="col-head">Sat</span>
-                    <img src="./images/weather-forecast/partly_cloudy.png" alt="partly cloudy">
-                    <span class="data">75&deg;F</span>
-                </div>
-                <div class="forecast-col">
-                    <span class="col-head">Sun</span>
-                    <img src="./images/weather-forecast/rain_s_cloudy.png" alt="rainy">
-                    <span class="data">72&deg;F</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="contentbox article clearfix">
-            <h2>Article Title</h2>
-            <p class="author">by Author I. Author</p>
-            <figure class="articlephoto">
-                <img src="./images/festival.jpg" alt="festival image" sizes="50vw"
-                     srcset="images/festival200.jpg 200w,
-                             images/festival500.jpg 500w,
-                             images/festival800.jpg 800w,
-                             images/festival1100.jpg 1100w"
-                    >
-                <figcaption>Festival</figcaption>
-            </figure>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ligula tellus, efficitur vel dictum id, volutpat eget arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Pellentesque venenatis, dolor sed cursus dapibus, lacus lacus ornare erat, sit amet pretium orci dolor ut turpis. Aliquam eget dui in sapien scelerisque feugiat vitae in libero. Suspendisse aliquam molestie eleifend. Morbi posuere vitae magna et sodales. Proin id nisl arcu. Etiam et turpis eget turpis placerat vehicula. Nunc ac lacus nec tortor molestie sodales. Nulla venenatis lacus ac massa ultricies, sed sagittis orci efficitur. Suspendisse auctor id risus at luctus. Aliquam felis diam, lacinia rhoncus justo a, volutpat pellentesque dui. Suspendisse lacinia faucibus gravida. Duis interdum, orci molestie lobortis tincidunt, tellus velit cursus metus, eget luctus ante arcu eu tortor.
-            </p>
-        </div>
-
-        <div class="contentbox contact">
-            <h3>The Weather Site</h3>
-            <p><span class="location">📍4A N 2nd E<br>Preston, ID 83263<br><br></span></p>
-            <p><span class="phone">📞555-555-5555</span></p>
-            <p><span class="email">📧contact@eyeskyweather.com</span></p>
-            <div class="social-media">
-                <img src="./images/facebook.png" alt="facebook page link">
-                <img src="./images/pinterest.png" alt="pinterest">
-                <img src="./images/twitter.png" alt="twitter">
-                <img src="./images/whattsapp.png" alt="whattsapp">
-            </div>
-        </div>
+                <label class="top">Any Additional Comments?
+                <textarea name="additional-comments"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Report Storm">
+        </form>
         
     </main>
     
