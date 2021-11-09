@@ -78,8 +78,8 @@ img {
 footer {
 	font-family: var(--font-sans);
 	font-size: 18px;
-	background-color: whitesmoke;
-	color: #444444;
+	background-color: #ff4346;
+	color: whitesmoke;
 	padding: 20px;
 	text-align: center;
 	width: 100%;
