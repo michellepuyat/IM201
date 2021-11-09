@@ -1,0 +1,15 @@
+@media only screen and (min-width: 37.5em){
+    div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    h1 {
+        font-size: 75px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
