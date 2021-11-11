@@ -1,11 +1,18 @@
 @media only screen and (min-width: 64em) {
     div {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
     }
 
     h1 {
         font-size: 90px;
     }
+    h2 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 12px;
+    }
+
 }
