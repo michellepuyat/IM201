@@ -28,6 +28,8 @@ fetch(requestURL)
                 yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
                 image.setAttribute('src','./images/card/' + towns[i].photo);
                 image.setAttribute('alt',towns[i].name);
+                image.setAttribute('width', "683");
+                image.setAttribute('height', "455");
                 details.setAttribute('id', 'details');
 
                 card.appendChild(details);

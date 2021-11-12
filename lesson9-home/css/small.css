@@ -14,10 +14,6 @@ header {
 }
 
 header .logo {
-	/*
-	width: 25%;
-    height: auto;
-	*/
 	margin: 0;
 	position: absolute;
 	top: 50%;
@@ -27,6 +23,12 @@ header .logo {
 	grid-column-start: 1;
 	grid-column-end: 2;
 }
+
+.logo img {
+	width: 150%;
+	height: auto;
+}
+
 
 header .headings {
 	grid-column: 2;
@@ -241,6 +243,7 @@ main div {
 
 .article figure.articlephoto img {
     width: 100%;
+	height: auto;
 }
 
 .article figure.articlephoto figcaption {
@@ -286,6 +289,7 @@ main div {
 
 .contact img {
 	width: 10%;
+	height: auto;
 }
 
 /*Image Gallery*/
@@ -462,6 +466,7 @@ form label.top input:required:valid {
 .cards section img {
 	margin: .1rem;
 	width: 100%;
+	height: auto;
 }
 
 .cards h2 {

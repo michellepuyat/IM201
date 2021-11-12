@@ -14,7 +14,6 @@
     <link href="css/large.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
 </head>
 <body>
 <!-- HEADER HERE -->
@@ -23,7 +22,7 @@
     </div>
 	<header id = "topbar">
         <figure class="logo">
-            <img src="images/Eye%20Sky%20Weather-logos_white.png" alt="logo" srcset="images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x">
+            <img src="images/Eye%20Sky%20Weather-logos_white.png" alt="logo" srcset="images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x" width="506" height="520">
         </figure>
         <section class="headings">
             <h1>Eye Sky Weather</h1>
@@ -49,11 +48,7 @@
         <!-- HERO IMAGE -->
         <div class="contentbox hero">
             <figure class="herophoto">
-                <img src="./images/hero/home-hero.png" alt="hero image" sizes="100vw"
-                     srcset="images/hero/home-hero-small.jpg 200w,
-                             images/hero/home-hero-medium.jpg 500w,
-                             images/hero/home-hero-large.jpg 800w"
-                    >
+                <img src="./images/hero/hero-placeholder.png" data-src="./images/hero/home-hero.jpg" width="1024" height="342">
             </figure>
         </div>       
         
@@ -63,7 +58,7 @@
         <!-- ARTICLE -->
         <div class="contentbox article clearfix">
             <figure class="articlephoto">
-                <img src="./images/article.jpg" alt="festival image" sizes="50vw"
+                <img src="./images/article.jpg" alt="festival image" sizes="50vw" width="576" height="386"
                      srcset="images/article.jpg 200w,
                              images/article.jpg 500w,
                              images/article.jpg 800w,
@@ -84,10 +79,10 @@
             <p><span class="phone">📞555-555-5555</span></p>
             <p><span class="email">📧contact@eyeskyweather.com</span></p>
             <div class="social-media">
-                <img src="./images/facebook.png" alt="facebook page link">
-                <img src="./images/pinterest.png" alt="pinterest">
-                <img src="./images/twitter.png" alt="twitter">
-                <img src="./images/whattsapp.png" alt="whattsapp">
+                <img src="./images/facebook.png" alt="facebook page link" width="128" height="128">
+                <img src="./images/pinterest.png" alt="pinterest" width="128" height="128">
+                <img src="./images/twitter.png" alt="twitter" width="128" height="128">
+                <img src="./images/whattsapp.png" alt="whattsapp" width="128" height="128">
             </div>
         </div>
         
@@ -98,9 +93,10 @@
         &copy;<span id="copyrightyear"></span> | Eye Sky Weather | All Rights Reserved | Michelle Angelie Puyat<br>
         <span id="currentdate"></span>
     </footer>
-    <script defer src="js/scripts.js"></script>
+    <script src="js/fetchTownData.js"></script>    
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/scripts.js"></script>
     <script src="js/webfontload.js"></script>
-    <script src="js/fetchTownData.js"></script>
+    <script src="js/lazy-load.js"></script>
 </body>
 </html>
