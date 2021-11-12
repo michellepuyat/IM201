@@ -433,21 +433,22 @@ form label.top input:required:valid {
 }
 
 /*Card*/
+
 .cards {
-	display: grid;
-	grid-gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
 	padding: 1rem;
 	max-width: 100%;
 	margin: 0 auto;
 }
 
 .cards section {
-	position: relative;
-	display: block;
-	padding: 1rem;
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
 	width: 100%;
 	text-align: center;
-	color: whitesmoke;
 	background-color: #bddbeb;
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1), 
     0 2px 2px rgba(0,0,0,0.1), 
@@ -463,13 +464,12 @@ form label.top input:required:valid {
 }
 
 .cards section img {
-	margin: .1rem;
 	width: 100%;
 	height: auto;
 }
 
 .cards section #detailsImg {
-	margin: 0;
+	margin: .5rem;
 	padding: 0;
 }
 

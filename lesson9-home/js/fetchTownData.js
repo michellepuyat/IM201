@@ -36,8 +36,8 @@ fetch(requestURL)
                 detailsImg.setAttribute('id', 'detailsImg');
                 detailsInfo.setAttribute('id', 'detailsInfo')
 
-                card.appendChild(detailsInfo);
                 card.appendChild(detailsImg);
+                card.appendChild(detailsInfo);
 
                 detailsInfo.appendChild(details);
 

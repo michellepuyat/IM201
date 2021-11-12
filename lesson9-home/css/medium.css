@@ -43,36 +43,21 @@
     }
 
 	/*Card*/
-	.cards {
-		display: flex;
-		flex-wrap: wrap;
-	}
-
 	.cards section {
-		display: flex;
 		flex-direction: row;
-	}
-
-	.cards section>* {
-		flex: 1 1 160px;
 	}
 
 	.cards section:nth-child(odd) {
 		flex-direction: row-reverse;
 	}
 
-	.cards section #detailsImg {
-		margin: 0;
-		padding: 0;
-	}
-
-	.cards section img {
-		width: 100%;
-		height: auto;
-	}
-
 	#detailsInfo {
+		width: 50%;
 		position: relative;
+	}
+
+	#detailsImg {
+		width: 50%;
 	}
 
 	#details {
@@ -82,7 +67,5 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
-
-
 
 }
