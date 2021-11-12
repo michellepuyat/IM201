@@ -41,4 +41,48 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
+
+	/*Card*/
+	.cards {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.cards section {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.cards section>* {
+		flex: 1 1 160px;
+	}
+
+	.cards section:nth-child(odd) {
+		flex-direction: row-reverse;
+	}
+
+	.cards section #detailsImg {
+		margin: 0;
+		padding: 0;
+	}
+
+	.cards section img {
+		width: 100%;
+		height: auto;
+	}
+
+	#detailsInfo {
+		position: relative;
+	}
+
+	#details {
+		position: absolute;
+		top: 50%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+
+
 }

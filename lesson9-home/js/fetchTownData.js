@@ -20,6 +20,8 @@ fetch(requestURL)
                 let currentPopulation = document.createElement('p');
                 let averageRainFall = document.createElement('p');
                 let details = document.createElement('div');
+                let detailsImg = document.createElement('div');
+                let detailsInfo = document.createElement('div')
                 
                 name.textContent = towns[i].name;
                 motto.textContent = towns[i].motto;
@@ -31,10 +33,15 @@ fetch(requestURL)
                 image.setAttribute('width', "683");
                 image.setAttribute('height', "455");
                 details.setAttribute('id', 'details');
+                detailsImg.setAttribute('id', 'detailsImg');
+                detailsInfo.setAttribute('id', 'detailsInfo')
 
-                card.appendChild(details);
-                card.appendChild(image);
+                card.appendChild(detailsInfo);
+                card.appendChild(detailsImg);
 
+                detailsInfo.appendChild(details);
+
+                detailsImg.appendChild(image);
                 details.appendChild(name);
                 details.appendChild(motto);
                 details.appendChild(yearFounded);

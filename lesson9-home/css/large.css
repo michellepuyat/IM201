@@ -68,6 +68,18 @@
         box-shadow: 0 2px 12px -2px rgba(0, 0, 0, 0.7);
         transform: translateY(-2px);
     }
+
+    /*Card*/
+	.cards {
+		flex-wrap: nowrap;
+	}
+
+    .cards section {
+		display: block;
+	}
+
+ 
+
 } /*end large */
 
 /*Form*/

@@ -257,8 +257,7 @@ main div {
 }
 
 .article {
-    margin: 1rem;
-	border: 1px solid #bbb;
+    margin: 0;
 	padding: 1rem;
 	background-color: #fff3c2;
 }
@@ -467,6 +466,11 @@ form label.top input:required:valid {
 	margin: .1rem;
 	width: 100%;
 	height: auto;
+}
+
+.cards section #detailsImg {
+	margin: 0;
+	padding: 0;
 }
 
 .cards h2 {
