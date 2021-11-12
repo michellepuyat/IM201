@@ -10,6 +10,11 @@ const options = {
 };
 document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);
 
+//toggle
+function toggleMenu() {
+    document.getElementById("primaryNav").classList.toggle("hide");
+}
+
 //hide and show banner
 const dayName = new Date().toLocaleString('en-us', {weekday:'long'})
 
