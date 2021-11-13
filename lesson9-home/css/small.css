@@ -30,7 +30,6 @@ header .logo {
 	height: auto;
 }
 
-
 header .headings {
 	grid-column: 2;
 	margin: 0 0 0 4%;
@@ -156,7 +155,7 @@ main div {
 
 .hero img {
     width: 100%;
-    height: max-content;
+    height: auto;
 }
 
 .current_weather {
