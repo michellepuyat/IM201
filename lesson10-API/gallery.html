@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="Gallery Page" content="Pictures of the different weather">
+    <meta name="author" content="Michelle Angelie Puyat">
+    <title>Gallery Page</title>
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+</head>
+<body>
+<!-- HEADER HERE -->
+    <div id="banner">
+        <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+	<header id = "topbar">
+        <figure class="logo">
+            <img src="images/Eye%20Sky%20Weather-logos_white.png" alt="logo" srcset="images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x">
+        </figure>
+        <section class="headings">
+            <h1>Eye Sky Weather</h1>
+            <h2>Come for the weather... Stay for the experience.</h2>
+        </section>
+    </header>
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix" id="navigation">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="./stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    
+<!-- CONTENT HERE -->
+    <main>
+        <section class="images-section">
+            <h2 class="pagetitle">Weather Gallery</h2>
+            <!-- GRID CONTATINER -->
+            <div class="images-container">
+                               
+                <figure class="image-container">
+                    <picture>
+                        <img src="images/gallery/placeholder.png" data-src="images/gallery/blizzard.jpg" alt="Blizzard">
+                    </picture>
+
+                    <figcaption>
+                        <p>Blizzard weather in the city</p>
+                    </figcaption>
+                </figure>
+                
+                <figure class="image-container">
+                    <picture>
+                        <img src="images/gallery/placeholder.png" data-src="images/gallery/frozen.jpg" alt="Snowy weather">
+                    </picture>
+
+                    <figcaption>
+                        <p>Frozen crops due to the snow</p>
+                    </figcaption>
+                </figure>
+                
+                <figure class="image-container">
+                    <picture>
+                        <img src="images/gallery/placeholder.png" data-src="images/gallery/landscape.jpg" alt="Cold morning by the mountain">
+                    </picture>
+
+                    <figcaption>
+                        <p>Cold morning by the mountain</p>
+                    </figcaption>
+                </figure>
+                
+                <figure class="image-container">
+                    <picture>
+                        <img src="images/gallery/placeholder.png" data-src="images/gallery/lightning.jpg" alt="Thunderstorms in the field">
+                    </picture>
+
+                    <figcaption>
+                        <p>Thunderstorms in the field</p>
+                    </figcaption>
+                </figure>
+                
+                <figure class="image-container">
+                    <picture>
+                        <img src="images/gallery/placeholder.png" data-src="images/gallery/rain.jpg" alt="Puddles in the city">
+                    </picture>
+
+                    <figcaption>
+                        <p>Puddles in the city</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <picture>
+                        <img src="images/gallery/placeholder.png" data-src="images/gallery/rain-boots.jpg" alt="Don't forget to wear your boots and bring your umbrella.">
+                    </picture>
+
+                    <figcaption>
+                        <p>Don't forget to wear your boots and bring your umbrella on a rainy day.</p>
+                    </figcaption>
+                </figure>
+                
+                <figure class="image-container">
+                    <picture>
+                        <img src="images/gallery/placeholder.png" data-src="images/gallery/rain-city.jpg" alt="City is experiencing heavy rains">
+                    </picture>
+
+                    <figcaption>
+                        <p>City is experiencing heavy rains</p>
+                    </figcaption>
+                </figure>
+                
+                <figure class="image-container">
+                    <picture>
+                        <img src="images/gallery/placeholder.png" data-src="images/gallery/sunset-dry.jpg" alt="Drought due to El Niño phenominon">
+                    </picture>
+
+                    <figcaption>
+                        <p>Drought due to El Niño phenominon</p>
+                    </figcaption>
+                </figure>
+                
+                <figure class="image-container">
+                    <picture>
+                        <img src="images/gallery/placeholder.png" data-src="images/gallery/thunderstorm.jpg" alt="Thunderstorm in the sky">
+                    </picture>
+
+                    <figcaption>
+                        <p>Thunderstorm in the sky</p>
+                    </figcaption>
+                </figure>
+                
+
+            </div>
+        </section>
+        
+        <div class="contentbox contact">
+            <p id="timeBetween"></p>
+        </div>
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        &copy;<span id="copyrightyear"></span> | Eye Sky Weather | All Rights Reserved | Michelle Angelie Puyat<br>
+        <span id="currentdate"></span>
+    </footer>
+    <script defer src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/lazy-load.js"></script>
+    <script src="js/time-visit.js"></script>
+</body>
+</html>
