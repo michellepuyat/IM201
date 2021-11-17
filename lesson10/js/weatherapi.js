@@ -3,7 +3,7 @@ const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        document.getElementById('current-temp').textContent = jsObject.main.temp;
+        document.getElementById('current-temp').textContent = Math.round((jsObject.main.temp - 273.15) * (9/5) + 32).toFixed(2);
         console.log(jsObject);
 
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
