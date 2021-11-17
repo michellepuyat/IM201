@@ -14,7 +14,7 @@ fetch(apiURL)
         } else {
         document.getElementById('wind-chill').innerHTML = windChill(t, v).toFixed(2) +'\xB0F';
         }
-        
+
         document.getElementById('humidity').textContent = jsObject.main.humidity +'%';
         document.getElementById('wind-speed').textContent = v + 'mph';
         console.log(jsObject);
@@ -22,7 +22,7 @@ fetch(apiURL)
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
         const desc = jsObject.weather[0].description;
 
-        document.getElementById('weather-today').textContent = desc;
+        document.getElementById('weather-today').textContent = desc.toUpperCase();
 
         document.getElementById('imagesrc').textContent = imagesrc;
         document.getElementById('icon').setAttribute('src', imagesrc);
@@ -34,3 +34,23 @@ function windChill(t, v){
     return f;
 }
 
+const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=a3d8b9de1fc1f3f0ac9d0f0ad4f61c16';
+
+fetch(forecastURL)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        const dayOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+        let newList = jsObject.list.filter(x => x.dt_txt.includes("18:00:00"));
+        
+        for (let day = 0; day <= 4; day ++) {
+            let d = new Date(newList[day].dt_txt);
+            let dayTemp = Math.round((newList[day].main.temp - 273.15) * (9/5) + 32).toFixed(2);
+            document.getElementById(`dayWeek${day+1}`).textContent = dayOfWeek[d.getDay()];
+            document.getElementById(`forecast${day+1}`).textContent = dayTemp + '\xB0F';
+
+            const imgalt = newList[day].weather[0].description;
+            const imagesrc = 'https://openweathermap.org/img/wn/' + newList[day].weather[0].icon + '@2x.png';
+            document.getElementById(`icon${day+1}`).setAttribute('src', imagesrc);
+            document.getElementById(`icon${day+1}`).setAttribute('alt', imgalt);
+        }
+    })
