@@ -41,6 +41,11 @@
     	float: right;
 	}
 
+	.contact img {
+		width: 7%;
+		height: auto;
+	}
+
 	/*Image Gallery*/
     .images-container {
         display: grid;
