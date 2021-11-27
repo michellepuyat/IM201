@@ -1,4 +1,5 @@
-const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=a3d8b9de1fc1f3f0ac9d0f0ad4f61c16';
+const cityId = document.querySelector('.stats').dataset["id"];
+const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&appid=a3d8b9de1fc1f3f0ac9d0f0ad4f61c16`;
 
 fetch(apiURL)
     .then((response) => response.json())
@@ -34,7 +35,7 @@ function windChill(t, v){
     return f;
 }
 
-const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=a3d8b9de1fc1f3f0ac9d0f0ad4f61c16';
+const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&appid=a3d8b9de1fc1f3f0ac9d0f0ad4f61c16`;
 
 fetch(forecastURL)
     .then((response) => response.json())
