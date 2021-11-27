@@ -37,8 +37,8 @@
         <ul id="primaryNav" class="hide">
             <li><a href="./index.html">Home</a></li>
             <li class="active"><a href="#">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="./sodasprings.html">Soda Springs</a></li>
+            <li><a href="./fishhaven.html">Fish Haven</a></li>
             <li><a href="./stormcenter.html">Storm Center</a></li>
             <li><a href="./gallery.html">Gallery</a></li>
         </ul>
@@ -46,10 +46,10 @@
     
 <!-- CONTENT HERE -->
     <main>
-        <h2 class="pagetitle">Preston Idaho</h2>
+        <h2 class="pagetitle">Preston, Idaho</h2>
         <div class="contentbox hero">
             <figure class="herophoto">
-                <img src="./images/hero/preston-hero.jpg" alt="hero image" sizes="100vw"
+                <img src="./images/hero/preston-hero.jpg" alt="Preston hero image" sizes="100vw"
                      srcset="images/hero/preston-hero200.jpg 200w,
                              images/hero/preston-hero500.jpg 500w,
                              images/hero/preston-hero800.jpg 800w,
@@ -58,7 +58,7 @@
             </figure>
             <div class="current_weather">
                 <h2><span>Weather Summary</span></h2>
-                <div class="stats">
+                <div class="stats" data-id="5604473">
                     <span class="label">Currently: </span><span id="weather-today"></span>
                     <span class="label">Temp: </span><span id="current-temp"></span>
                     <span class="label">High: </span><span id="temp-max"></span>
@@ -100,6 +100,8 @@
             </div>
         </div>
 
+        <div class="eventArea"><h3>Upcoming Town Events</h3><span id="townEvents"></span></div>
+
         <div class="contentbox article clearfix">
             <h2>Article Title</h2>
             <p class="author">by Author I. Author</p>
@@ -137,9 +139,10 @@
         &copy;<span id="copyrightyear"></span> | Eye Sky Weather | All Rights Reserved | Michelle Angelie Puyat<br>
         <span id="currentdate"></span>
     </footer>
-    <script defer src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
     <script src="js/weatherapi.js"></script>
+    <script src="js/fetchEvents.js"></script>
 </body>
 </html>
