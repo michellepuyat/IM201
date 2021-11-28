@@ -127,7 +127,8 @@ nav ul.hide {
 }
 
 .pagetitle {
-    text-align: center;
+    margin: 0;
+	padding: 5%;
 }
 
 main div {
@@ -263,11 +264,17 @@ main div {
 }
 
 .article .author {
-	margin-top: 0;
+	margin: 0;
 	font-weight: bold;
 }
 .article h2 {
 	margin-bottom: 0;
+}
+
+.article .credit {
+	font-style: italic;
+	margin-top: 0;
+	font-size: 14px;
 }
 
 /*Contact Info*/
@@ -511,5 +518,91 @@ form label.top input:required:valid {
 
 #townEvents ul {
 	list-style-type: none;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.background-container {
+    position: relative;
+    padding: 5% 0;
+    text-align: center!important;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1), 
+    0 2px 2px rgba(0,0,0,0.1), 
+    0 4px 4px rgba(0,0,0,0.1), 
+    0 8px 8px rgba(0,0,0,0.1),
+    0 16px 16px rgba(0,0,0,0.1);
+}
+.background-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(23,27,38,.92)), to(rgba(39,45,62,.92)));
+    background-image: linear-gradient(to top, rgba(23,27,38,.92) 0%, rgba(39,45,62,.92) 100%);
+}
+.background-cover {
+    z-index: 2;
+    position: relative;
+    color: #fff;
+	margin: 0;
 	padding: 0;
+}
+.line-heading {
+    -webkit-box-align: center;
+    align-items: center;
+	margin:0;
+	padding: 0;
+}
+.line-heading-left {
+    text-align: center!important;
+    margin: 0;
+    padding: 0;
+}
+.line-heading-left h2 {
+    color: #fff;
+    font-size: 2.625rem;
+    font-weight: bold;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    line-height: 1.1;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+.line-heading-left h4 {
+    font-size: 1.75rem;
+    font-weight: 300;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    color: #05B0E3;
+    line-height: 1.1;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+.line-heading p {
+    margin-left: 38px;
+    margin-top: 0;
+    border-left: 3px solid #05B0E3;
+    padding: 12px 0 12px 30px;
+    line-height: 24px;
+    -webkit-box-flex: 1;
+    flex: 1;
+    font-size: 1rem;
+   font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    color: #bfbfbf;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+#townEvents li {
+	margin:5%;
+}
+
+#townEvents ul {
+	margin:0;
 }
