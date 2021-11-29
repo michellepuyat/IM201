@@ -574,7 +574,7 @@ form label.top input:required:valid {
     margin: 0;
     padding: 0;
 }
-.line-heading-left h4 {
+.line-heading-left #townEvents {
     font-size: 1.75rem;
     font-weight: 300;
   font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
