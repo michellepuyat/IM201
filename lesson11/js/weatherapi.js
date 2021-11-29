@@ -25,9 +25,6 @@ fetch(apiURL)
 
         document.getElementById('weather-today').textContent = desc.toUpperCase();
 
-        document.getElementById('imagesrc').textContent = imagesrc;
-        document.getElementById('icon').setAttribute('src', imagesrc);
-        document.getElementById('icon').setAttribute('alt', desc);
     });
     
 function windChill(t, v){
