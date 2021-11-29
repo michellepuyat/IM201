@@ -43,12 +43,15 @@ fetch(forecastURL)
         for (let day = 0; day <= 4; day ++) {
             let d = new Date(newList[day].dt_txt);
             let dayTemp = Math.round((newList[day].main.temp - 273.15) * (9/5) + 32).toFixed(2);
+            let image = document.createElement('img');
             document.getElementById(`dayWeek${day+1}`).textContent = dayOfWeek[d.getDay()];
             document.getElementById(`forecast${day+1}`).textContent = dayTemp + '\xB0F';
 
             const imgalt = newList[day].weather[0].description;
             const imagesrc = 'https://openweathermap.org/img/wn/' + newList[day].weather[0].icon + '@2x.png';
-            document.getElementById(`icon${day+1}`).setAttribute('src', imagesrc);
-            document.getElementById(`icon${day+1}`).setAttribute('alt', imgalt);
+            image.setAttribute('id',`icon${day+1}`);
+            image.setAttribute('src', imagesrc);
+            image.setAttribute('alt', imgalt);
+            document.querySelector(`div.weatherIcon${day+1}`).appendChild(image);
         }
     })
