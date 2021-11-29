@@ -22,7 +22,6 @@
 		width: 130%;
 		height: auto;
 	}
-	
 
 	/*hero*/
 	.hero { 
@@ -48,12 +47,13 @@
 	
 	.pagetitle {
 		top: 50%;
-		left: 80%;
+		left: 75%;
 	}
 	
 	.pagetitle h2 {
 		font-size: 60px;
-	}
+	}	
+	
 
 	/*Image Gallery*/
     .images-container {
