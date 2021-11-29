@@ -126,11 +126,6 @@ nav ul.hide {
     display: none;
 }
 
-.pagetitle {
-    margin: 0;
-	padding: 5%;
-}
-
 main div {
     margin: 1rem;
 	padding: 1rem;
@@ -144,45 +139,7 @@ main div {
     clear: both;
   }
 
-/* hero */
-.hero { 
-    margin: 0;
-    padding: 0;
-}
 
-.hero .herophoto {
-	margin: 0 0 0 0;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-}
-
-.current_weather {
-	background: radial-gradient(#eee, #0375B4);
-	border: 1px solid #262228;
-	padding: 1.5rem;
-	box-shadow: 0 0 30px #333;
-	opacity: .9;
-}
-
-.current_weather h2{
-    margin: 0;
-	border-bottom: 2px solid;
-}
-
-.stats {
-    display: grid;
-	grid-template-columns: 1fr 1fr;
-	margin: 0;
-}
-
-.label {
-	text-align: right;
-	font-weight: 700;
-	margin-right: .5rem;
-}
 
 /* 5 Day Forecast */
 .forecast {
@@ -605,4 +562,68 @@ form label.top input:required:valid {
 
 #townEvents ul {
 	margin:0;
+}
+
+/* hero */
+.image-text {
+	position: relative;
+	margin: 0;
+	padding: 0;
+
+}
+
+.hero { 
+    margin: 0;
+    padding: 0;
+}
+
+.hero .herophoto {
+	margin: 0 0 0 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.pagetitle {
+    margin: 0;
+	padding: 5%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  	text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+	text-align: center;
+}
+
+.pagetitle h2{
+	margin: 0;
+	font-size: 50px;
+	color: #262228;
+}
+
+.current_weather {
+	background: radial-gradient(#eee, #0375B4);
+	border: 1px solid #262228;
+	padding: 1.5rem;
+	box-shadow: 0 0 30px #333;
+	opacity: .9;
+}
+
+.current_weather h2{
+    margin: 0;
+	border-bottom: 2px solid;
+}
+
+.stats {
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 0;
+}
+
+.label {
+	text-align: right;
+	font-weight: 700;
+	margin-right: .5rem;
 }

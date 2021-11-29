@@ -45,6 +45,15 @@
 		width: 7%;
 		height: auto;
 	}
+	
+	.pagetitle {
+		top: 50%;
+		left: 80%;
+	}
+	
+	.pagetitle h2 {
+		font-size: 60px;
+	}
 
 	/*Image Gallery*/
     .images-container {

@@ -53,6 +53,15 @@
 		left: 25px;
 	}
 
+    .pagetitle {
+		top: 50%;
+		left: 70%;
+	}
+	
+	.pagetitle h2 {
+		font-size: 70px;
+	}
+
     /*Image Gallery */
     .images-container {
         display: grid;
