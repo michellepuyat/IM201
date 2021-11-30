@@ -172,6 +172,12 @@ main div {
 	text-align: center;
 }
 
+.subpage-title{
+	margin: 5% 0 0 0;
+	padding: 0;
+	text-align: center;
+}
+
 .pagetitle h2{
 	margin: 0;
 	font-size: 50px;
