@@ -1,0 +1,19 @@
+{
+  "businesses": [
+    {
+      "name": "Cafe 194",
+      "photo": "cafe.jpg",
+      "motto": "You deserve it!"
+    },
+    {
+       "name": "Pharmacia Carsal",
+       "photo": "carsal.jpg",
+       "motto": "Best Medicine, Best Rate!"
+    },
+    {
+       "name": "Photo City Studio",
+       "photo": "photocity.jpg",
+       "motto": "Bring your creativity to life!"
+    }
+  ]
+}

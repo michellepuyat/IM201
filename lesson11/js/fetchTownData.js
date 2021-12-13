@@ -19,7 +19,7 @@ fetch(requestURL)
                 let yearFounded = document.createElement('p');
                 let currentPopulation = document.createElement('p');
                 let averageRainFall = document.createElement('p');
-                let details = document.createElement('div');
+                let details = document.createElement('div');z
                 let detailsImg = document.createElement('div');
                 let detailsInfo = document.createElement('div')
                 
