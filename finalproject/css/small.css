@@ -265,21 +265,30 @@ footer h3 {
 }
 
 /*list*/
+.contentbox {
+	margin: auto;
+}
+
+.article h2 {
+	text-align: center;
+	font-size: 2rem;
+}
+
 .article ul {
     list-style-type: none;
     padding: 0 1rem 0 1rem;
-    margin: 0;
+    margin: auto;
 	font-family: 'Montserrat', sans-serif;
 }
 
 .article ul li {
 	background-color: #1E5085;
 	color: #fff;
-	margin: 1rem .5rem;
+	margin: .5rem auto;
 	padding: 0.5rem;
 	border: 2px solid #1E5085;
 	border-radius: 0 15px;
-	width: 50%;
+	width: 80%;
 }
 
 /*Card*/
