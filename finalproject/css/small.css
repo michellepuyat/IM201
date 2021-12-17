@@ -789,3 +789,15 @@ a, a:visited, a:active {
 	padding: 1rem;
    	margin: 0 auto;
 }
+
+iframe {
+	width: 100%;
+}
+
+#contact-us-form {
+	background-color: #f3d196;
+}
+   
+.form-shell {
+	list-style-type: none;
+}
