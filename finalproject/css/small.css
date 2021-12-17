@@ -215,6 +215,11 @@ footer h3 {
 	background-color: #1E5085;
 }
 
+/*title*/
+.pagetitle h2 {
+	padding: 1.5rem;
+}
+
 /*Article*/
 .article figure.articlephoto {
     width: 100%;
