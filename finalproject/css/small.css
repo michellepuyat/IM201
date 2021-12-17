@@ -774,3 +774,7 @@ section .events ul li .details p {
 #details a {
 	text-decoration: none;
 }
+
+a, a:visited, a:active {
+	color: inherit;
+  }
