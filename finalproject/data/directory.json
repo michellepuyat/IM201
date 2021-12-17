@@ -1,0 +1,53 @@
+{
+    "directory": [
+      {
+        "name": "Barako Boy",
+        "type": "Coffee Shop",
+        "contact": "0906 035 7488", 
+        "website": "https://www.facebook.com/barakoboycoffee",
+        "logo": "barakoboy.jpg"
+      },
+      {
+        "name": "Gerry's Restaurant and Bar",
+        "type": "Restaurant",
+        "contact": "(078) 375 2373", 
+        "website": "http://www.gerrysgrill.com/ph/",
+        "logo": "gerrys.jpg"
+      },
+      {
+        "name": "Jollibee",
+        "type": "Fast Food Chain",
+        "contact": "(078) 844 3509", 
+        "website": "https://www.jollibeedelivery.com/",
+        "logo": "jollibee.png"
+      },
+      {
+        "name": "DIWA Printing Press",
+        "type": "Printing Press",
+        "contact": "0917 510 3311", 
+        "website": "https://www.facebook.com/diwaprintingpress",
+        "logo": "diwa.png"
+      },
+      {
+        "name": "Lighthouse Cooperative",
+        "type": "General Merchandise",
+        "contact": "(078) 304 0635", 
+        "website": "https://www.facebook.com/lighthousecoop.ph",
+        "logo": "lighthouse.jpg"
+      },
+      {
+        "name": "Abana Computer Services",
+        "type": "Computer and Electronic Services",
+        "contact": "(078) 844 2992", 
+        "website": "https://www.facebook.com/pages/Abana-Computer-Services/1712646578761930",
+        "logo": "abana.jpg"
+      },
+      {
+        "name": "Pension Roma",
+        "type": "Hotel and Restaurant",
+        "contact": "(078) 844 1057", 
+        "website": "https://www.facebook.com/Hotel-Roma-Tuguegarao-163765772017162",
+        "logo": "hotelroma.png"
+      }
+    ]
+  }
