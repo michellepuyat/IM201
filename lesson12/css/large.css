@@ -80,34 +80,6 @@
         transform: translateY(-2px);
     }
 
-    /*Card*/
-    .cards {
-        flex-direction: row;
-        padding: 0;
-	}
-
-    .cards section {
-        flex-direction: column;
-        align-items: center;
-        margin: .5rem .5rem 1rem  .5rem;
-    }
-
-    .cards section:nth-child(odd) {
-		flex-direction: column;
-	}
-
-    #detailsInfo {
-        width: 100%;
-    }
-
-    #detailsImg {
-        width: 90%;
-    }
-
-    #details {
-        all: revert;
-        padding: 0;
-    }
     
 
 } /*end large */
