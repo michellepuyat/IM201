@@ -710,3 +710,67 @@ section .events ul li .details p {
 	background-color: #666;
 	color: white;
  }
+
+ .directory {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin: auto;
+	overflow: auto;
+	padding: 0;
+	max-width: 80%;
+	margin: 0 auto;
+ }
+
+.directory section {
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	text-align: center;
+	background-color: #f3d196;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1), 
+    0 2px 2px rgba(0,0,0,0.1), 
+    0 4px 4px rgba(0,0,0,0.1), 
+    0 8px 8px rgba(0,0,0,0.1),
+    0 16px 16px rgba(0,0,0,0.1);
+	padding: .5rem;
+}
+
+.directory #details {
+	color: black;
+	margin: 0;
+	padding: 0 0 .5rem 0;
+}
+
+.directory section img {
+	width: 80%;
+	height: auto;
+}
+
+.directory section #detailsImg {
+	margin: auto;
+	padding: 0;
+}
+
+.directory h2 {
+	font-family: 'Bebas Neue', sans-serif;;
+	color: black;
+	margin: 1rem 0 0 0;
+}
+
+.directory h4 {
+	font-family: 'Opens Sans Condensed', sans-serif;
+	color: black;
+	margin: .5rem 0 0 0;
+	font-size: 16px;
+}
+
+.directory p {
+	font-family: 'Lora', sans-serif;
+	color: black;
+	margin: 0;
+}
+
+#details a {
+	text-decoration: none;
+}

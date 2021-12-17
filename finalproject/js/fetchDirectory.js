@@ -17,7 +17,7 @@ fetch(data)
                 let type = document.createElement('h4');
                 let image = document.createElement('img');
                 let contact = document.createElement('p');
-                let website = document.createElement('p');
+                let website = document.createElement('a');
                 let details = document.createElement('div');
                 let detailsImg = document.createElement('div');
                 let detailsInfo = document.createElement('div')
@@ -29,14 +29,16 @@ fetch(data)
                 image.setAttribute('alt',directory[i].name);
                 image.setAttribute('width', "455");
                 image.setAttribute('height', "455");
-                contact.textContent = directory[i].contact;
-                website.textContent = directory[i].website;
+                contact.textContent = "📞" + directory[i].contact;
+                website.textContent = "🔗 Website";
+                website.setAttribute('href', directory[i].website);
+                website.setAttribute("target", "_blank");
                 details.setAttribute('id', 'details');
                 detailsImg.setAttribute('id', 'detailsImg');
                 detailsInfo.setAttribute('id', 'detailsInfo')
 
-                card.appendChild(detailsInfo);
                 card.appendChild(detailsImg);
+                card.appendChild(detailsInfo);
                 
                 detailsInfo.appendChild(details);
 
@@ -47,7 +49,7 @@ fetch(data)
 
                 detailsImg.appendChild(image);
                 
-                document.querySelector('div.cards').appendChild(card);
+                document.querySelector('div.directory').appendChild(card);
             }
         
     })
