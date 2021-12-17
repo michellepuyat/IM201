@@ -36,9 +36,9 @@
             <button onclick="toggleMenu()">&#9776;</button>
             <ul id="primaryNav" class="hide">
                 <li><a href="./index.html">Home</a></li>
-                <li class="active"><a href="#">City</a></li>
+                <li><a href="#">City</a></li>
                 <li><a href="./join.html">Join</a></li>
-                <li><a href="./directory.html">Directory</a></li>
+                <li class="active"><a href="./directory.html">Directory</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -50,8 +50,12 @@
     
 <!-- CONTENT HERE -->
     <main>
+        <div id="btnContainer">
+            <button class="btn" onclick="listView()">List</button>
+            <button class="btn active" onclick="gridView()">Grid</button>
+        </div>
         <!-- CARDS -->
-        <div class="cards images-container"></div>
+        <div class="cards images-container directory"></div>
 
         <!-- FOOTER HERE -->   
         <footer>
@@ -69,5 +73,6 @@
     <script src="js/lazy-load.js"></script>
     <script src="js/fetchDirectory.js"></script>
     <script src="js/fetchEvents.js"></script>
+    <script src="js/directory.js"></script>
 </body>
 </html>

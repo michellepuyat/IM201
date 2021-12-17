@@ -22,6 +22,7 @@ fetch(data)
                 let detailsImg = document.createElement('div');
                 let detailsInfo = document.createElement('div')
 
+                card.setAttribute('class', 'column');
                 name.textContent = directory[i].name;
                 type.textContent = directory[i].type;
                 image.setAttribute('src','./images/business/' + directory[i].logo);

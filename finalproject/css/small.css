@@ -307,7 +307,7 @@ footer h3 {
 	flex-direction: column;
 	overflow: auto;
 	padding: 1rem;
-	max-width: 100%;
+	max-width: 90%;
 	margin: 0 auto;
 }
 
@@ -337,7 +337,7 @@ footer h3 {
 }
 
 .cards section #detailsImg {
-	margin: .5rem;
+	margin: auto;
 	padding: 0;
 }
 
@@ -399,6 +399,13 @@ picture img {
     transition: filter 500ms;
 }
 
+.directory section {
+	text-align: center;
+}
+.directory #detailsImg {
+	width: 50%;
+	max-width: 455px;
+}
 /*Form*/
 .joinForm {
 	background: #D0EEFD;
@@ -680,3 +687,26 @@ section .events ul li .details p {
 	font-size: 18px;
 	font-weight: bold;
 }
+
+/* Directory */
+
+/* Style the buttons */
+#btnContainer {
+	margin: 1rem;
+}
+
+.btn {
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: #f1f1f1;
+	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
+ }
+ .btn:hover {
+	background-color: #ddd;
+ }
+ .btn.active {
+	background-color: #666;
+	color: white;
+ }
