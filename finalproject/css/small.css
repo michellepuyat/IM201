@@ -798,6 +798,49 @@ iframe {
 	background-color: #f3d196;
 }
    
-.form-shell {
+.form-shell, .form-meat {
 	list-style-type: none;
 }
+
+.form-meat label {
+	font-weight: normal;
+ }
+ 
+ .form-shell li, .form-meat {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+ }
+ 
+ .form-shell > li > label, .form-shell li p {
+   flex: 1 0 120px;
+   max-width: 220px;
+   margin: 10px;
+ }
+ 
+ .form-shell > li > label + *, .form-shell {
+   flex: 1 0 220px;
+ }
+ 
+ .form-shell li button {
+	margin-left: auto;
+	padding: 8px 16px;
+  }
+ 
+  .form-meat li, .form-skin li {
+	margin: 5px;
+	flex: 1 100px;
+  }
+ 
+  .form-meat, .form-skin li {
+	justify-content: space-between;
+  }
+ 
+  .form-skin li {
+	 width: 50px;
+	 display: inline;
+  }
+ 
+  .form-skin label {
+	font-weight: normal;
+  }
