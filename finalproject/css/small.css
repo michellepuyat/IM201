@@ -166,6 +166,7 @@ footer h3 {
 .hero .herophoto {
 	display: inline-block;
 	margin: 0 0 0 0;
+	background-color: #D0EEFD;
 }
 
 .hero img {
@@ -173,6 +174,14 @@ footer h3 {
 	width: 100%;
     height: auto;
 	min-height: 275px;
+}
+
+.hero .city {
+	height: max-content;
+}
+
+.hero .city .city-image{
+	min-height: 134px;
 }
 
 .action {
