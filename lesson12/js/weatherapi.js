@@ -5,19 +5,10 @@ fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
         let t = Math.round((jsObject.main.temp - 273.15) * (9/5) + 32).toFixed(2);
-        let v = jsObject.wind.speed;
 
         document.getElementById('current-temp').textContent = t +'\xB0F';
-        document.getElementById('temp-max').textContent = Math.round((jsObject.main.temp_max - 273.15) * (9/5) + 32).toFixed(2) +'\xB0F';
-        //windchill
-        if (t > 50 || v < 3) {
-            document.getElementById('wind-chill').innerHTML =  'N/A';
-        } else {
-        document.getElementById('wind-chill').innerHTML = windChill(t, v).toFixed(2) +'\xB0F';
-        }
-
+        
         document.getElementById('humidity').textContent = jsObject.main.humidity +'%';
-        document.getElementById('wind-speed').textContent = v + 'mph';
         console.log(jsObject);
 
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';

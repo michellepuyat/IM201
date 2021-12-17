@@ -2,17 +2,17 @@
   "businesses": [
     {
       "name": "Cafe 194",
-      "photo": "cafe.jpg",
+      "photo": "cafe.png",
       "motto": "You deserve it!"
     },
     {
        "name": "Pharmacia Carsal",
-       "photo": "carsal.jpg",
+       "photo": "carsal.png",
        "motto": "Best Medicine, Best Rate!"
     },
     {
        "name": "Photo City Studio",
-       "photo": "photocity.jpg",
+       "photo": "photocity.png",
        "motto": "Bring your creativity to life!"
     }
   ]

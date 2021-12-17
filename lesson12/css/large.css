@@ -7,18 +7,23 @@
     }
     
     h2 {
-        
         font-size: 24px;
     }
 
-    nav {
-        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffce00+0,ffe068+100 */
-        background: #ffce00; /* Old browsers */
-        background: -moz-linear-gradient(top,  #ffce00 0%, #ffe068 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top,  #ffce00 0%,#ffe068 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom,  #ffce00 0%,#ffe068 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffce00', endColorstr='#ffe068',GradientType=0 ); /* IE6-9 */
+    #menuHeader {
+        height: 150px;
+    }
 
+    nav {
+        position: relative;
+        left: 40%;
+        top: 50%;
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        font-size: 1.1rem;
     }
 
     nav button {
@@ -33,25 +38,22 @@
         margin-left: 2%;
     }
 
-    nav ul li {
+    nav ul li { 
         float: left;
     }
 
     nav ul li a {
         border: none;
-        border-right: 1px solid rgba(0, 0, 0, 0.3);
-        padding: .6rem 1rem;
+        padding: .6rem 2rem;
+    }
+
+    .logo img {
+        left: 5%;
     }
 
     /*hero*/
     .hero { 
         position: relative;
-    }
-
-    .current_weather {
-        position: absolute;
-        top: 25px;
-        left: 25px;
     }
 
     .pagetitle {

@@ -3,8 +3,12 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-h1, h2, h3 {
-	font-family: 'Montserrat', sans-serif;
+h1, h2 {
+	font-family: 'Bebas Neue', sans-serif;
+}
+
+h3, h4 {
+	font-family: 'Opens Sans Condensed', sans-serif;
 }
 
 h1 {
@@ -13,7 +17,27 @@ h1 {
 }
 
 h2 {
-	font-size: 22px;
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 25px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+header,
+nav,
+main,
+footer, #banner {
+	margin: 0 auto;
 }
 
 #banner {
@@ -51,6 +75,7 @@ h2 {
 .logo img {
 	width: 60%;
 	height: auto;
+	max-height: 90px;
 	position: absolute;
 	top: 20px;
 	left: 100px;
@@ -101,52 +126,18 @@ nav ul.hide {
     clear: both;
 }
 
-/*
-
-
-header .headings {
-	grid-column: 2;
-	margin: 0 0 0 4%;
-}
 
 footer {
-	background-color: #0375B4;
+	background-color: #891C25;
 	color: #fff;
-	justify-content: center;
-	padding: 10px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 18px;
-	text-align: center;
+	padding: 18px 18px;
+	text-align: left;
 }
 
-header,
-nav,
-main,
-footer, #banner {
-	max-width: 1024px;
-	margin: 0 auto;
+footer h3 {
+	margin: 0;
 }
 
-
-
-
-
-header h2 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 15px;
-}
-
-div {
-	font-size: 17px;
-	font-family: 'Lora', serif;
-}
-
-
-main div {
-    margin: 1rem;
-	padding: 1rem;
-	
-}
 
 
 
@@ -156,18 +147,19 @@ main div {
     padding: 0;
 	position: relative;
 	width: 100%;
-	height: auto;
+	height: max-content;
 }
 
 .hero .herophoto {
+	display: inline-block;
 	margin: 0 0 0 0;
-	height: 275px;
 }
 
 .hero img {
 	padding: 0;
 	width: 100%;
     height: auto;
+	min-height: 275px;
 }
 
 .action {
@@ -226,7 +218,6 @@ main div {
 
 .article p {
 	text-align: justify;
-	font-size: 16px;
 	font-family: Montserrat;
 }
 
@@ -293,124 +284,23 @@ main div {
 
 .cards h2 {
 	font-family: 'Bebas Neue', sans-serif;;
-	font-size: 30px;
 	color: black;
 	margin: 1rem 0 0 0;
 }
 
 .cards h4 {
 	font-family: 'Opens Sans Condensed', sans-serif;
-	font-size: 18px;
 	color: black;
 	margin: .5rem 0 0 0;
 }
 
 .cards p {
 	font-family: 'Lora', sans-serif;
-	font-size: 18px;
 	color: black;
 	margin: 0;
 }
 
 
-/* weather */
-.current_weather {
-	background: radial-gradient(#eee, #0375B4);
-	border: 1px solid #262228;
-	padding: 1.5rem;
-	box-shadow: 0 0 30px #333;
-	opacity: .9;
-}
-
-.current_weather h2{
-    margin: 0;
-	border-bottom: 2px solid;
-}
-
-.stats {
-    display: grid;
-	grid-template-columns: 1fr 1fr;
-	margin: 0;
-}
-
-.label {
-	text-align: right;
-	font-weight: 700;
-	margin-right: .5rem;
-}
-
-/* 5 Day Forecast */
-.forecast {
-	display: flex;
-	flex-flow: row wrap;
-    border: none;
-}
-
-.forecast-col {
-	flex: 1 1 auto;
-	background-color: #fff;
-    border: 1px solid #bbb;
-	text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.forecast-col:hover {
-	opacity: 0.75;
-	background-color: #262228;
-	color: white;
-}
-
-.col-head {
-	display: block;
-	padding: 5px;
-	border-bottom: 1px solid #bbb;
-	text-align: center;
-    font-weight: 700;
-	font-size: 1.2rem;
-	background-color: #FFCE00;
-	color: #0375B4;
-}
-
-.forecast img {
-	border-radius: 100px;
-	padding: 0.25rem;
-    width: 80%;
-}
-
-.data {
-	display: block;
-	padding: 0 5px 5px;
-	font-size: .9rem;
-	text-align: center;
-}
-
-.col-head, .data {
-    font-family: 'ABeeZee', sans-serif;
-}
-
-
-
-/*Contact Info*/
-.contact {
-	margin: 0;
-	background-color: hsl(201, 97%, 77%);
-	color: #262228;
-	justify-content: center;
-	padding: 10px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 15px;
-	text-align: center;
-}
-.contact p {
-	font-size: 18px;
-	margin:0;
-}
-
-.contact img {
-	width: 10%;
-	height: auto;
-}
 
 /*Image Gallery*/
 .images-section h2{
@@ -555,107 +445,167 @@ form label.top input:required:valid {
 
 
 /*Events*/
-.eventArea {
-	margin-bottom: 1rem;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	background-color: #bddbeb;
-	box-shadow: 0 1px 1px rgba(0,0,0,0.1), 
-    0 2px 2px rgba(0,0,0,0.1), 
-    0 4px 4px rgba(0,0,0,0.1), 
-    0 8px 8px rgba(0,0,0,0.1),
-    0 16px 16px rgba(0,0,0,0.1);
+.upcomingEvents {
+	background-color: #d0eefd;
 }
 
-#townEvents ul {
-	list-style-type: none;
+.upcomingEvents h2 {
+	text-align: center;
+	margin: 0;
+	padding: 18px 0 10px 0;
 }
-.container {
-    max-width: 1200px;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+section .events {
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	padding:0;
+	margin:0;
 }
-.background-container {
-    position: relative;
-    padding: 5% 0;
-    text-align: center!important;
-	box-shadow: 0 1px 1px rgba(0,0,0,0.1), 
-    0 2px 2px rgba(0,0,0,0.1), 
-    0 4px 4px rgba(0,0,0,0.1), 
-    0 8px 8px rgba(0,0,0,0.1),
-    0 16px 16px rgba(0,0,0,0.1);
+
+section .events ul {
+	position: relative;
+	margin: 0;
+	padding: 0 20px 20px;
+	box-sizing: border-box;
+	background-color: #d0eefd;
 }
-.background-overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(23,27,38,.92)), to(rgba(39,45,62,.92)));
-    background-image: linear-gradient(to top, rgba(23,27,38,.92) 0%, rgba(39,45,62,.92) 100%);
+
+section .events ul li {
+	position: relative;
+	list-style: none;
+	box-sizing: border-box;
+	height: 290px;
+	padding: 1px;
 }
-.background-cover {
-    z-index: 2;
-    position: relative;
-    color: #fff;
+
+section .events ul li .time {
+	position: relative;
+	padding: 0;
+	background: #262626;
+	box-sizing: border-box;
+	width: 40%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	transition: .5s;
+}
+
+section .events ul li:hover .time {
+	background: #891C25;
+}
+
+section .events ul li .time h2 {
+	position: relative;
 	margin: 0;
 	padding: 0;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 60px;
+	line-height: 30px;
 }
-.line-heading {
-    -webkit-box-align: center;
-    align-items: center;
-	margin:0;
+
+section .events ul li .time #month {
+	font-size: 20px;
+	position: relative;
+	margin: 0;
 	padding: 0;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	line-height: 30px;
 }
-.line-heading-left {
-    text-align: center!important;
+
+section .events ul li .details {
+	padding: 0 20px 0 20px;
+	box-sizing: border-box;
+	width: 60%;
+	height: 100%;
+	float: right;
+	margin: 0;
+	background: #fff;
+}
+
+section .events ul li .details p {
+	margin: 0;
+	font-size: 18px;
+}
+
+/*Weather*/
+.current_weather {
+	background: #f3d196;
+	padding-bottom: 18px;
+	opacity: .9;
+}
+
+.current_weather h2{
+	margin: 0;
+    padding: 18px 0 10px 0;
+	text-align: center;
+}
+
+.stats {
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+
+.label {
+	text-align: right;
+	font-weight: 700;
+	margin-right: .5rem;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* 3 Day Forecast */
+.forecast {
+	display: flex;
+	flex-flow: row wrap;
+    border: none;
+	margin: 10px
+}
+
+.forecast-col {
+	flex: 1 1 auto;
+	text-align: center;
     margin: 0;
     padding: 0;
 }
-.line-heading-left h2 {
-    color: #fff;
-    font-size: 2.625rem;
+
+.forecast-col:hover {
+	opacity: 0.75;
+	background-color: #7e7a80;
+	color: white;
+}
+
+.col-head {
+	display: block;
+	padding-top: 18px;
+	text-align: center;
     font-weight: bold;
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-    line-height: 1.1;
-    vertical-align: baseline;
-    margin: 0;
-    padding: 0;
-}
-.line-heading-left #townEvents {
-    font-size: 1.75rem;
-    font-weight: 300;
-  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-    color: #05B0E3;
-    line-height: 1.1;
-    vertical-align: baseline;
-    margin: 0;
-    padding: 0;
-}
-.line-heading p {
-    margin-left: 38px;
-    margin-top: 0;
-    border-left: 3px solid #05B0E3;
-    padding: 12px 0 12px 30px;
-    line-height: 24px;
-    -webkit-box-flex: 1;
-    flex: 1;
-    font-size: 1rem;
-   font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-    color: #bfbfbf;
-    text-align: left;
-    margin-bottom: 0;
+	font-size: 1.2rem;
+	color: #1E5085;
 }
 
-#townEvents li {
-	margin:5%;
+.forecast img {
+	border-radius: 100px;
+	padding: 0.25rem;
+    width: 80%;
 }
 
-#townEvents ul {
-	margin:0;
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	font-size: .9rem;
+	text-align: center;
 }
 
+.col-head, .data {
+    font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}

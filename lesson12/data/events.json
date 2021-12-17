@@ -1,0 +1,29 @@
+{
+    "events": [
+      {
+        "event": "The Future of Retail and Logistics After The E-Commerce Boom",
+        "month": "December",
+        "date": 18, 
+        "year": 2021,
+        "time": "11:00 AM",
+        "venue": "Via Facebook Live"
+      },
+      {
+        "event": "Tech For Good Institute Launch Event",
+        "month": "January",
+        "date": 22, 
+        "year": 2022,
+        "time": "10:00 AM",
+        "venue": "Via Zoom"
+      },
+      {
+        "event": "Consumer Insighting and Storytelling WebConference: Reboot 2.0 - Insights for a Post Covid Future",
+        "month": "February",
+        "date": 14, 
+        "year": 2022,
+        "time": "9:00 AM",
+        "venue": "Via Zoom"
+      }
+
+    ]
+  }

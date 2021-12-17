@@ -1,39 +1,33 @@
 @media only screen and (min-width: 37.5em){
-	h1 {
-		font-size: 40px;
-		margin-bottom: 0;
-		text-align: left;
-	}
-	
-	h2 {
-		
-		font-size: 20px;
-	}
-
-	header h2 {
-		font-size: 20px;
-	}
-
-	header .headings {
-		margin: 0 0 0 0;
-	}
-
 	.logo img {
-		width: 130%;
-		height: auto;
+		position: absolute;
+		top: 20px;
+		left: 30%;
+		width: 40%;
+		max-width: 320px;
+	}
+
+	/*banner*/
+	#banner .headings {
+		position: relative;
+		text-align: right;
+	}
+
+	#banner .social-media {
+		position: absolute;
+		top: .5%;
+		right: 100px;
+		margin: 25px;
 	}
 
 	/*hero*/
-	.hero { 
-		position: relative;
+	.hero img {
+		padding: 0;
+		width: 100%;
+		height: auto;
 	}
 
-	.current_weather {
-		position: absolute;
-		top: 25px;
-		left: 25px;
-	}
-
+	/*article*/
 	.article figure.articlephoto {
 		width: 50%;
     	margin: 0 0 0 2%;
@@ -63,29 +57,72 @@
     }
 
 	/*Card*/
-	.cards section {
+    .cards {
+        flex-direction: row;
+        padding: 0;
+	}
+
+    .cards section {
+        flex-direction: column;
+        align-items: center;
+        margin: .5rem .5rem 1rem  .5rem;
+    }
+
+    .cards section:nth-child(odd) {
+		flex-direction: column;
+	}
+
+    #detailsInfo {
+        width: 100%;
+    }
+
+    #detailsImg {
+        width: 90%;
+    }
+
+    #details {
+        all: revert;
+        padding: 0;
+    }
+    
+	/*Events*/
+	section .events ul {
+		display: flex;
 		flex-direction: row;
 	}
 
-	.cards section:nth-child(odd) {
-		flex-direction: row-reverse;
+	section .events ul li {
+		flex-direction: column;
+        align-items: center;
+        margin: .5rem .5rem 1rem  .5rem;
 	}
 
-	#detailsInfo {
+	section .events ul li {
+		flex: 1;
+		margin: 0;
+		min-height: 194px;
+	}
+
+	section .events ul li .time h2 {
+		font-size: 40px;
+	}
+
+	section .events ul li .time #month {
+		font-size: 16px;
+	}
+	
+	section .events ul li .details h4 {
+		font-size: 14px;
+	}
+
+	section .events ul li .details p {
+		font-size: 12px;
+	}
+	
+	/* 3 Day Forecast */
+	.forecast img {
+		border-radius: 100px;
+		padding: 0.25rem;
 		width: 50%;
-		position: relative;
 	}
-
-	#detailsImg {
-		width: 50%;
-	}
-
-	#details {
-		position: absolute;
-		top: 50%;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-
 }
