@@ -778,3 +778,14 @@ section .events ul li .details p {
 a, a:visited, a:active {
 	color: inherit;
   }
+
+.thanks {
+	text-align: center;
+}
+
+/* Contact Us */
+#contact, #contact-head {
+	background-color: #D0EEFD;
+	padding: 1rem;
+   	margin: 0 auto;
+}
