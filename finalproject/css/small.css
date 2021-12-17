@@ -222,7 +222,7 @@ footer h3 {
 }
 
 /*Article*/
-.article figure.articlephoto {
+.article figure .articlephoto {
     width: 100%;
     height: max-content;
 	box-shadow: 0 0 .5rem #333;
@@ -262,6 +262,24 @@ footer h3 {
 	font-style: italic;
 	margin-top: 0;
 	font-size: 14px;
+}
+
+/*list*/
+.article ul {
+    list-style-type: none;
+    padding: 0 1rem 0 1rem;
+    margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.article ul li {
+	background-color: #1E5085;
+	color: #fff;
+	margin: 1rem .5rem;
+	padding: 0.5rem;
+	border: 2px solid #1E5085;
+	border-radius: 0 15px;
+	width: 50%;
 }
 
 /*Card*/
