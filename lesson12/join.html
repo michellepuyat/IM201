@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="Tuguegarao City Chamber of Commerce" content="Tuguegarao City Chamber of Commerce">
+    <meta name="author" content="Michelle Angelie Puyat">
+    <title>Tuguegarao City Chamber of Commerce</title>
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+<!-- BANNER HERE -->
+	<div id = "banner">
+        <section class="headings">
+            <h2><a href="./join.html"> Join </a>| Login</h2>
+        </section>
+        <div class="social-media">
+            <img src="./images/facebook.png" alt="facebook page link" width="128" height="128">
+            <img src="./images/pinterest.png" alt="pinterest" width="128" height="128">
+            <img src="./images/twitter.png" alt="twitter" width="128" height="128">
+            <img src="./images/whattsapp.png" alt="whattsapp" width="128" height="128">
+        </div>
+    </div>
+
+<!-- HEADER HERE -->
+    <header id = "menuHeader">
+        <!-- NAVIGATION HERE -->
+        <nav class="clearfix" id="navigation">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./city.html">City</a></li>
+                <li class="active"><a href="./join.html">Join</a></li>
+                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <picture class="logo">
+            <img src="images/Logo.png" alt="logo" srcset="images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x" width="506" height="520">
+        </picture>
+    </header>
+    
+<!-- CONTENT HERE -->
+    <main>
+        <div class="joinForm">
+            <h2 class="subpage-title">Join the Tuguegarao City Chamber of Commerce</h2>
+            <form action="thanks.html">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label class="top">First Name<span>*</span>
+                        <input name="fname" pattern="^[a-zA-Z ][a-zA-Z]$" type="text" required title="First Name should only contain letters alphanumeric characters">
+                    </label>
+                    <label class="top">Last Name<span>*</span>
+                        <input name="lname" pattern="^[a-zA-Z ][a-zA-Z]$" type="text" required title="Last Name should only contain letters alphanumeric characters">
+                    </label>
+                    <label class="top">Title
+                        <input name="title" pattern="^[A-Z0-9 _]*$" type="text" title="Title should only contain letters alphanumeric characters">
+                    </label>
+                    <label class="top">Email<span>*</span>
+                        <input name="email" type="email" required placeholder="someone@gmail.com">
+                    </label>
+                    <label class="top">Cell Phone Number<span>*</span>
+                        <input name="phone" type="tel" required>
+                    </label>
+                    <label class="top">Business Name
+                        <input name="busines" pattern="^[a-zA-Z ]{5,}[a-zA-Z]$" type="text" required title="Name should only contain letters alphanumeric characters">
+                    </label>
+                    <label class="top">Business Address
+                        <input name="address" pattern="^[a-zA-Z ][a-zA-Z]$" type="text" title="Name should only contain letters alphanumeric characters">
+                    </label>
+                    <label class="top">Business Website
+                        <input name="website" pattern="^[a-zA-Z ]{5,}[a-zA-Z]$" type="text" title="Name should only contain letters alphanumeric characters">
+                    </label>
+                    </label>
+                    <label class="top">Business Description
+                        <textarea name="additional-comments"></textarea>
+                        </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Membership</legend>
+                    <div>Select your membership level</div>
+                    <label class="sbs"><input type="radio" name="membership" value="Non-profit"> Non-profit ($100)</label>
+                    <label class="sbs"><input type="radio" name="membership" value="Bronze"> Bronze ($200)</label>
+                    <label class="sbs"><input type="radio" name="membership" value="Silver"> Silver ($400)</label>
+                    <label class="sbs"><input type="radio" name="membership" value="Gold"> Gold ($1000)</label>
+                </fieldset>
+                <input class="submitBtn" type="submit" value="Join">
+            </form>
+        </div>
+
+        <!-- FOOTER HERE -->   
+        <footer>
+            <h3>&copy;2021 | Tuguegarao City Chamber of Commerce | All Rights Reserved</h3>
+            <p><span class="location">📍Regional Government Center, Tuguegarao City, Cagayan 3500</span></p>
+            <p><span class="phone">📞555-555-5555</span></p>
+            <p><span class="email">📧contact@tuguegaraochamber.com</span></p>
+        </footer>
+        
+    </main>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/lazy-load.js"></script>
+    <script src="js/fetchBusinessesData.js"></script>
+    <script src="js/fetchEvents.js"></script>
+    <script src="js/weatherapi.js"></script>
+</body>
+</html>
