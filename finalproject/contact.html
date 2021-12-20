@@ -64,51 +64,34 @@
 
             <div id="contact-us-form">
                 <h3>Contact Form</h3>
-                <form class="contact-form" action="thanks.html">
-                    <ul class="form-shell">
-                        <li>
-                            <label class="top" for="name">Full Name*</label>
-                            <input type="text" id="name" minlength="2" maxlength="50" size="20" required
-                                pattern="[A-Z][A-Za-z' -]+">
-                        </li>
-                        <li>
-                            <label class="top" for="phone">Phone*</label>
+                <form class="contact-form" action="thanks   .html">
+                    <fieldset class="form-shell">
+                        <label class="top" for="name">Full Name<span>*</span>
+                            <input type="text" id="name" minlength="2" maxlength="50" size="20" required pattern="[A-Z][A-Za-z' -]+">
+                        </label>
+                        <label class="top" for="phone">Phone<span>*</span>
                             <input type="tel" id="phone" name="tel" required minlength="10">
-                        </li>
-                        <li>
-                            <label class="top" for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="address@domain.com">
-                        </li>
-                        <li>
-                            <label class="top" for="message">Message (max 500 characters)</label>
+                        </label>
+                        <label class="top" for="email">Email<span>*</span>
+                            <input type="email" id="email" name="email" placeholder="address@domain.com" required>
+                        </label>
+                        <label class="top" for="message">Message (max 500 characters)
                             <textarea name="message" id="message" rows="6" maxlength="500"
                                 placeholder="Please give us a brief idea of what your inquiry is about and a representative will contact you."></textarea>
-                        </li>
-                        <li>
-                            <p>Preferred method of contact? (Please check all that apply)</p>
-                            <ul class="form-meat">
-                                <li>
-                                    <input type="checkbox" id="email-pref">
-                                    <label class="top" for="email-pref">Email</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="phone-pref">
-                                    <label class="top" for="phone-pref">Phone</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="text-pref">
-                                    <label class="top" for="text-pref">Text</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="other-pref">
-                                    <label class="top" for="other-pref">Other (Please specify in comments)</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <button type="submit">Submit</button>
-                        </li>
-                    </ul>
+                        </label>
+                        <fieldset>
+                            <legend>Preferred method of contact? (Please check all that apply)</legend>
+                            <label class="sbs" for="email-pref"><input type="checkbox" id="email-pref"> Email</label>
+                            <label class="sbs" for="phone-pref"><input type="checkbox" id="phone-pref"> Phone</label>
+                            <label class="sbs" for="text-pref"><input type="checkbox" id="text-pref"> Text</label>
+                            <label class="sbs" for="other-pref"><input type="checkbox" id="other-pref"> Other (Please specify in comments)</label>
+                            <label class="top" for="message">Comments (max 500 characters)
+                                <textarea name="comment" id="comment" rows="6" maxlength="500"
+                                    placeholder="Please enter your preferred contact method"></textarea>
+                            </label>
+                        </fieldset>
+                        <button type="submit">Submit</button>
+                    </fieldset>
                 </form>
             </div>
         </div>

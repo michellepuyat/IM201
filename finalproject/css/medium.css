@@ -125,4 +125,20 @@
 		padding: 0.25rem;
 		width: 50%;
 	}
+
+	/* Contact */
+	#contact {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 50px;
+	}
+
+	#contact-us-map {
+		grid-column-start: 1;
+	}
+
+	#contact-us-form {
+		grid-column-start: 2;
+	}
+
 }
