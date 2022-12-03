@@ -83,9 +83,9 @@ header h2 {
 	font-size: 15px;
 }
 
-div {
-	font-size: 17px;
-	font-family: 'Lora', serif;
+div, p {
+	font-size: 16px;
+	font-family: 'Quattrocento Sans', serif;
 }
 
 nav button {
@@ -256,7 +256,7 @@ main div {
 }
 
 .col-head, .data {
-    font-family: 'ABeeZee', sans-serif;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 /*Article*/
@@ -506,14 +506,14 @@ form label.top input:required:valid {
 }
 
 .cards h2 {
-	font-family: 'ABeeZee', sans-serif;;
+	font-family: 'Quattrocento Sans', sans-serif;;
 	font-size: 22px;
 	color: black;
 	margin: 0;
 }
 
 .cards h4 {
-	font-family: 'ABeeZee', sans-serif;
+	font-family: 'Quattrocento Sans', sans-serif;
 	font-style: italic;
 	font-size: 20px;
 	color: black;
@@ -521,7 +521,7 @@ form label.top input:required:valid {
 }
 
 .cards p {
-	font-family: 'Lora', sans-serif;
+	font-family: 'Quattrocento Sans', sans-serif;
 	font-size: 18px;
 	color: black;
 	margin: 0;
