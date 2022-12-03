@@ -6,8 +6,8 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 header {
 	background-color: #00296B;
-	color: #fff;
-	padding: 10px;
+	color: #ffff;
+	padding: 30px;
     display: grid;
 	grid-template-columns: 1fr 2fr;
 	position: relative;
@@ -40,7 +40,7 @@ footer {
 	color: #fff;
 	justify-content: center;
 	padding: 10px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Quattrocento Sans', sans-serif;
 	font-size: 18px;
 	text-align: center;
 }
@@ -58,14 +58,14 @@ footer, #banner {
 	color: #262228;
 	justify-content: center;
 	padding: 10px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Quattrocento Sans', sans-serif;
 	font-size: 18px;
 	font-weight: bold;
 	text-align: center;
 }
 
 h1, h2, h3 {
-	font-family: 'ABeeZee', sans-serif;
+	font-family: 'Quattrocento Sans', sans-serif;
 }
 
 h1 {
@@ -79,7 +79,7 @@ h2 {
 }
 
 header h2 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Quattrocento Sans', sans-serif;
 	font-size: 15px;
 }
 
@@ -98,7 +98,7 @@ nav button {
 
 nav {
     background-color: #FDC500;
-    font-family: Verdana, sans-serif;
+    font-family: Quattrocento Sans, sans-serif;
 	font-size: 1.2rem;
     text-align: center;
 	position: sticky;
@@ -305,11 +305,11 @@ main div {
 /*Contact Info*/
 .contact {
 	margin: 0;
-	background-color: hsl(201, 97%, 77%);
-	color: #262228;
+	background-color:#0C4C7B;
+	color: #ffff;
 	justify-content: center;
 	padding: 10px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Quattrocento Sans', sans-serif;
 	font-size: 15px;
 	text-align: center;
 }
@@ -378,7 +378,7 @@ form legend {
     color: #00296B;
     margin: 0 1rem;
     padding: 0 .5rem;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Quattrocento Sans', sans-serif;
 }
 
 form label.top, form div {
@@ -386,7 +386,7 @@ form label.top, form div {
     padding: 1rem 0 0 0;
 	margin: 0;
     color: #262228;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Quattrocento Sans', sans-serif;
 }
 
 form label.top input, form label.top select, form textarea {
@@ -432,7 +432,7 @@ form label.sbs {
     padding-top: .75rem;
     color: #555;
 	font-size: 1rem;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Quattrocento Sans', sans-serif;
 }
 
 form input.submitBtn{
