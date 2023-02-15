@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Problem 2</title>
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h1>Problem 2</h1>
+            <h2>Currency Converter System</h2>
+        </header>
+        <main>
+            <select name="currency" id="currency" onchange="changeLabel()">
+                <option value="us">US Dollar to PH Peso</option>
+                <option value="hk">HK Dollar to PH Peso</option>
+                <option value="au">AU Dollar to PH Peso</option>
+                <option value="nz">NZ Dollar to PH Peso</option>
+                <option value="jp">JP Yen to PH Peso</option>
+                <option value="sa">SA Riad (Dinnar) to PH Peso</option>
+                <option value="uk">UK Pound to PH Peso</option>
+            </select>
+            <label>Exchange Rate: </label><input type="text" id="exchangeRate" onkeyup="convert()">
+            <label id="from">US Dollar: </label><input type="text" id="currency1" onkeyup="convert()">
+            <label id="to">PH Peso: </label><input type="text" id="currency2" onkeyup="convert2()">
+
+            <hr>
+        </main>
+        <footer>
+            &copy;2021 &bull; Michelle Angelie B. Puyat &bull; St. Paul University Philippines &bull; MITIM206
+        </footer>
+
+        <script src="js/myScript.js"></script>
+    </body>
+</html>
